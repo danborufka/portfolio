@@ -1,0 +1,18 @@
+	</div>
+	<!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+	<!-- <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="js/libs/jquery-1.11.3.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/cookie.min.js"></script>
+	<% 	if(page.scripts.length) { 
+		_.each(page.scripts, script => { %>	<script src="<%= script %>"></script>
+<% 		});
+	} %><script type="text/javascript">
+		jQuery(function($) {
+			_automated = true;
+			$(window).resize();
+			_automated = false;
+		});
+	</script>
+	</body>
+</html>

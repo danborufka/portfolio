@@ -1,0 +1,49 @@
+<!-- 																<%= _.repeat("\n", 10) %>
+	Interested in the source code? 									<%= _.repeat("\n", 50)  %>
+	I get that, but at least I'm gonna make you scroll for it! 		<%= _.repeat("\n", 50)  %>
+	Come on… 														<%= _.repeat("\n", 70)  %>
+	Keep going! 													<%= _.repeat("\n", 100) %>
+	Almost there! 													<%= _.repeat("\n", 150) %>
+	Aren't your fingers numb from all the scrolling?				<%= _.repeat("\n", 300) %>
+	Alright, you deserve it! 										<%= _.repeat("\n", 30)  %>
+	Here it goes:
+--><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		<%= page.title || 'Dan Borufka, Polygoat' %>
+	</title>
+	<base href="<%= base %>/" />
+	<!-- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css">
+<% 	if(page.styles.length) { 
+		_.each(page.styles, style => { %>	<link rel="stylesheet" type="text/css" href="<%= style %>">
+<% 		});
+	} %></head>
+<body>
+	<iframe src="responsive-goat.html" id="responsive-goat"></iframe>
+	<div class="modal fade" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="languageModalLbl" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="languageModalLbl">Select a language</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <ul class="select languages">
+	        	<li class="<%= language === 'en-US' ? 'selected' : '' %>" data-value="en-US"><a href="#en-US">English (United States)</a></li>
+	        	<li class="<%= language === 'en-GB' ? 'selected' : '' %>" data-value="en-GB"><a href="#en-GB">English (Great Britain)</a></li>
+	        	<li class="<%= language === 'de-DE' ? 'selected' : '' %>" data-value="de-DE"><a href="#de-DE">Deutsch (Deutschland)</a></li>
+	        </ul>
+	      </div>
+	      <div class="modal-footer">
+	        <a href="close" class="cancel" data-dismiss="modal">Cancel</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="container-fluid" id="main">

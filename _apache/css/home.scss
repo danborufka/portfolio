@@ -1,0 +1,49 @@
+@import 'main';
+
+.logo 					{
+							display: 			block;
+							margin: 			0 auto;
+							max-width: 			200px;
+	h1 					{
+							font-size: 			44px;
+							padding-left: 		24px;
+	}
+	h2 					{
+							font-size: 			44px;
+							margin-top: 		-46px;
+							padding-left: 		6px;
+	}
+
+	img 				{
+							transition: 		.2s ease all;
+	}
+
+	&:hover 			{
+		img 			{
+							transform: 			scale(1.04);
+		}
+	}
+}
+
+#hats 					{
+							font-family: 		'Nickainley-Normal';
+							font-size:  		76%;
+							max-width: 			660px;
+							text-align: 		center;
+	> a 				{
+							backface-visibility: hidden;
+							background-repeat: 	no-repeat;
+							background-position: 	center center;
+							background-size: 	contain;
+							border: 			1px solid transparent;
+							cursor: 			pointer;
+							margin-bottom: 	 	50px;
+							min-height: 		100px;
+							padding-top: 		100px;	
+							text-decoration: 	none;
+							transition: 		.2s ease all;
+		&:hover 		{
+							transform: 			scale(1.1);
+		}
+	}
+}

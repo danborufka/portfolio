@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Responsive Goat</title>
+	<base href="." />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		body {			background: 		rgba(255,255,255,.9);			
+						overflow: 			hidden;
+		}
+		.row {
+						flex-wrap: 			nowrap;
+						justify-content: 	center;
+		}
+		.col 	{		min-width: 			340px;			}
+		.front 	{		margin-left: 		-210px;		}
+		.heading {		
+						font-size:  		200%;
+						margin-top: 		20px;		
+		}
+		.heading,
+		.center {		text-align: 		center;			}
+		.back 	{
+						margin-right: 		-204px;
+						text-align: 		right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid" id="responsiveGoat">
+		<div class="row">
+			<div class="col back">
+				<img src="img/goat-back.png">
+			</div>
+			<div class="col center">
+				<img src="img/goat-center.png">
+			</div>
+			<div class="col front">
+				<img src="img/goat-front.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col heading">
+				<strong>Of course it's responsive!</strong><br>
+				<span class="sm">Switch to your phone if you <i>must</i> know.</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

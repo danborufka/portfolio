@@ -1,0 +1,26 @@
+@import 'main';
+
+.header                           {
+                                    display:          flex;
+                                    justify-content:  space-between;
+                                    padding-right:    20px;
+                                    padding-top:      20px;
+  h1                              {
+                                    font-size:        200%;
+                                    font-family:      'Nickainley-Normal', 'script';
+                                    margin-left:      60px;
+  }                                    
+  .brand                          {
+                                    margin-right:     -10px;
+                                    margin-top:       10px;
+                                    opacity:          0.6;
+                                    transition:       .2s ease all;
+    &:hover                       {
+                                    opacity:          1;
+    }
+  }
+}
+
+.paper                            {
+                                    text-align:       center;
+}
