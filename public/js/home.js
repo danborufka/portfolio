@@ -25,7 +25,7 @@ jQuery(function($){
   		_automated = true;
   		$win.resize();
   		_automated = false;
-  	}, 400);
+  	}, 900);
 
   	_automated = false;
 });
