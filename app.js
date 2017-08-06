@@ -1,6 +1,7 @@
 const _ 				= require('lodash');
 const fs 				= require("fs");
 const i18n 				= require('i18n');
+const marked 			= _.partialRight(require('marked').inlineLexer, []);
 const express 			= require('express');
 const bodyParser 		= require('body-parser');
 const cookieParser 		= require('cookie-parser');
@@ -28,7 +29,7 @@ let data = {
 
 // config translation engine
 i18n.configure({
-	defaultLocale: 	'en-US',
+	defaultLocale: 	data.language,
     directory: 		__dirname + '/locales',
     locales: 		['en-US', 'en-GB', 'de-DE'],
 	objectNotation: true,
@@ -47,14 +48,20 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+function switchLang(req, res, language) {
+	if(language) {
+		res.cookie('polygoat-portfolio-language', language);
+		data.language = language;
+		data.setLocale(language);
+		req.setLocale(language);
+		res.setLocale(language);
+	}
+}
+
 // router middleware to read language from cookie
 app.use(function switchLanguageMW(req, res, next) {
-	var language = _.get(req.cookies, 'polygoat-portfolio-language', 'en-US');
-
-	data.language = language;
-	data.setLocale(language);
-	req.setLocale(language);
-	res.setLocale(language);
+	var language = _.get(req.cookies, 'polygoat-portfolio-language');
+	switchLang(req, res, language);
 
   	next();
 });
@@ -65,24 +72,33 @@ app.get('/', (req, res) => {
 	data.page.styles = ['css/home.css'];
 	data.page.scripts = ['js/main.js', 'js/home.js'];
 
+	data.__ = req.__;
+	data.marked = (...arguments) => marked(req.__.apply(req, arguments));
+
 	res.render('page.html', data);
 });
 
 // route for reactive translation retrieval
 app.post('/translate', (req, res) => {
 	const keys = _.get(req.body, 'keys', []);
-	const language = _.get(req.body, 'language', 'en-US');
+	const language = _.get(req.body, 'language');
+	const transformers = _.get(req.body, 'transformers', []);
+	const _ALLOWED_TRANSFORMERS = ['_', 'marked'];
 
-	res.cookie('polygoat-portfolio-language', language, { httpOnly: true });
-
-	data.language = language;
-	data.setLocale(language);
-	req.setLocale(language);
-	res.setLocale(language);
+	switchLang(req, res, language);
 
 	res.json({ 
 		values: _.map(	keys, 
-						key => data.__({phrase: key, locale: language}) 
+						(key, i) => {
+							var value = data.__({phrase: key, locale: language});
+							if(transformers[i]) {
+								if(_ALLOWED_TRANSFORMERS.indexOf(transformers[i].split('.')[0]) > -1) {
+									return eval(transformers[i])(value);
+								}
+								return value;
+							}
+							return value;
+						}
 					) 
 	});
 });
@@ -90,23 +106,25 @@ app.post('/translate', (req, res) => {
 // hat routes
 app.get('/hats/:hat', (req, res) => {
 
-	var hat = req.params.hat;
+	var hat = _.camelCase(req.params.hat);
 	var title = _.startCase(hat.split('-').join(' ').toLowerCase());
 
 	_.extend(data.page, {
-		uri: 		'subpage.html',
-		subpage: 	`hats/${hat}.html`,
+		uri: 		'hat.html',
 		styles: 	['css/pages.css'],
 		scripts: 	['js/main.js'],
 		title: 		`Dan Borufka, ${title}`,
-		headline: 	`The ${title}`
 	});
 
-	data.getting = 'subheadline';
-	data.page.subheadline = _.trim(data.include(data.page.subpage));
-	data.getting = '';
-
 	data.__ = req.__;
+	data.marked = (...arguments) => marked(req.__.apply(req, arguments));
+	data.hat = hat;
+
+	if(fs.existsSync(`views/hats/${hat}.html`)) {
+		data.template = `hats/${hat}.html`;
+	} else {
+		data.template = false;
+	}
 
 	res.render('page.html', data);
 });

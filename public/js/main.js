@@ -39,9 +39,15 @@ jQuery(function($){
 
 	  var _translateAll = function() {
 	  	var $translatables = $('.translatable');
+
 	  	$.post('/translate', {
 	  		language: language,
-	  		keys: $.makeArray($translatables.map(function(){ return $(this).data('translation-key'); }))
+	  		keys: $.makeArray($translatables.map(function(){ 
+	  			return $(this).data('translation-key'); 
+	  		})),
+	  		transformers: $.makeArray($translatables.map(function(){ 
+	  			return $(this).data('translation-transformer'); 
+	  		}))
 	  	}, function(data) {
 	  		$translatables.each(function(index) {
 	  			$(this).html(data.values[index]);
@@ -69,9 +75,5 @@ jQuery(function($){
 			}
 			
 			event.preventDefault();	
-		})
-		.on('translate', '.translatable', function(event) {
-			var $this = $(this);
-			console.log('translate', $this.data('translation-key'));
 		});
 });
