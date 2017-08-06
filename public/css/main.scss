@@ -44,16 +44,30 @@ a,
 a:hover,
 a:visited 				{
 							color:  			$main_ink_color;
+};
+
+b, strong 				{
+							font-family: 		'Miso Bold';
 }
 img 					{
 							backface-visibility: hidden;
 							border: 			1px solid transparent;
+	&.standalone 		{
+							display: 			block;
+							margin: 			0 auto;
+	}						
 }
 p 						{
-							text-align: 		center;
+							text-align: 		justify;
 							padding-left: 		20%;
 							padding-right: 		20%;
+	@media (max-width: 600px) 
+	 					{
+	 						hyphens: 			auto;
+							text-align: 		left;	
+	}
 }
+
 
 .modal-backdrop.in 		{
 						    opacity: 			.8;
@@ -182,6 +196,14 @@ p 						{
 							position: 			absolute;
 							right: 				15px;
 
+	}
+	p 					{
+							margin-bottom: 		0;
+							margin-top: 		3px;
+							text-align: 		center;
+							@media (max-width: 600px) {
+
+							}
 	}
 }
 .paper 					{
