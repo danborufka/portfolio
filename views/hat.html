@@ -16,6 +16,6 @@
 	<% if(template) { %>
 		<%= include(template) %>
 	<% } else { %>
-		<span class="translatable" data-translation-key="<%= hat %>.body"><%= __(hat + '.body') %></span>
+		<span class="translatable" data-translation-key="<%= hat %>.body" data-translation-transformer="marked"><%= marked(hat + '.body') %></span>
 	<% } %>
 </div>
