@@ -1,13 +1,49 @@
 {
 	"home": {
 		"pipeline": "Ich habe die gesamte Pipeline der Werbeindustrie überlebt …",
-		"jobs": "… in Positionen als Illustrator, Texter, Konzeptionist, Projectmanager, Webdesigner, senioriger Full-Stack Entwickler, Tech Lead, und technischer Berater."
+		"jobs": "… in Positionen als Illustrator, Texter, Konzeptionist, Projectmanager, Webdesigner, senioriger Full-Stack Entwickler, Tech Lead, und technischer Berater.",
+		"hats": "In 16 Jahren konnte ich etliche Hüte tragen:"
+	},
+	"animator": {
+		"headline": "der Animator",
+		"subheadline": "Coming soon",
+		"body": "…"
+	},
+	"comingSoon": {
+		"headline": "demnächst …",
+		"subheadline": "Was nun?",
+		"body": "…"
+	},
+	"copywriter": {
+		"headline": "der Texter",
+		"subheadline": "Coming soon",
+		"body": "…"
 	},
 	"designer": {
-		"headline": "Der Designer",
-		"subheadline": "TBD"
+		"headline": "der Designer",
+		"subheadline": "Coming soon",
+		"body": "…"
 	},
 	"linguist": {
-		"body": "Die meisten Menschen, die ich kenne, beginnen eine neue Sprache und finden Spaß an einem schnellen Einstieg. Kurz darauf sind sie entmutigt, weil sich die Lektionen nach Arbeit anfühlen und kostbare Zeit beanspruchen, und hören auf. <br><br> Sprachen müssen ihren Platz im Alltag finden und so spielerisch wie möglich unterrichtet werden – wir wenden das selbe antiquierte Lehrsystem für Sprachen an wie für Mathematik. <br><br> Die folgenden Kernpunkte "
+		"headline": "der Linguist",
+		"subheadline": "Coming soon",
+		"body": "…",
+		"p1": "linguist.p1",
+		"p2": "linguist.p2"
+	},
+	"marketeer": {
+		"headline": "der Werber",
+		"subheadline": "Coming soon",
+		"body": "…"
+	},
+	"mathHat": {
+		"headline": "der Entwickler",
+		"subheadline": "Coming soon",
+		"body": "…"
+	},
+	"partyHat": {
+		"headline": "der Partyhut",
+		"subheadline": "Coming soon",
+		"body": "…"
 	}
 }

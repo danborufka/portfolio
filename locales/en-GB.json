@@ -1,6 +1,41 @@
 {
 	"home": {
 		"pipeline": "I survived the entire pipeline of the advertizing industry …",
-		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant."
+		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant.",
+		"hats": "Over 16 years, I was able to put on a lot of different hats:"
+	},
+	"designer": {
+		"headline": "the Designer",
+		"subheadline": "This is where I draw the line.",
+		"body": " "
+	},
+	"linguist": {
+		"headline": "the Linguist",
+		"subheadline": "Learning languages should be fun.",
+		"p1": "We teach languages the same way we teach History or Math.  \nPeople who venture into new languages quickly find themselves frustrated because it feels like **too much** commitment in **time and effort**. Some learning apps even make you feel dumb. I believe there has to be a breaking change in _how_ we teach languages."
+	},
+	"animator": {
+		"headline": "the Animator"
+	},
+	"copywriter": {
+		"headline": "the Copywriter"
+	},
+	"marketeer": {
+		"headline": "the Marketeer"
+	},
+	"mathHat": {
+		"headline": "the Math Hat",
+		"subheadline": "**Math** hat, not meth-head.",
+		"body": "…"
+	},
+	"comingSoon": {
+		"headline": "Coming soon",
+		"subheadline": "What's next?",
+		"body": "…"
+	},
+	"partyHat": {
+		"headline": "the Party Hat",
+		"subheadline": "Let's ~~party~~ work together!",
+		"body": "…"
 	}
 }

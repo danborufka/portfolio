@@ -1,6 +1,48 @@
 {
 	"home": {
 		"pipeline": "I survived the entire pipeline of the advertising industry …",
-		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant."
+		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant.",
+		"hats": "Over 16 years, I was able to put on a lot of different hats:"
+	},
+	"designer": {
+		"headline": "the Designer",
+		"subheadline": "This is where I draw the line.",
+		"body": "To be continued …"
+	},
+	"linguist": {
+		"headline": "the Linguist",
+		"subheadline": "Learning languages should be fun.",
+		"p1": "Sadly, we teach languages the same way we teach History or Math.  \nPeople who venture into new languages quickly find themselves frustrated because it feels like **too much** commitment in **time and effort**. There has to be a breaking change in _how_ we teach languages.",
+		"p2": "I have dedicated a lot of my work life on UI/UX (user interface and user experience) and marketing, while spending my pastime on languages.  \nA ton of shortcomings of **modern language teaching** can be counteracted with a lot of what I have learned in computer science, design, and marketing.  \n  \n<u>As such I have made it my mission to make learning of languages fun again.</u>"
+	},
+	"animator": {
+		"headline": "the Animator",
+		"subheadline": "animator.subheadline",
+		"body": "animator.body"
+	},
+	"copywriter": {
+		"headline": "the Copywriter",
+		"subheadline": "copywriter.subheadline",
+		"body": "copywriter.body"
+	},
+	"marketeer": {
+		"headline": "the Marketeer",
+		"subheadline": "marketeer.subheadline",
+		"body": "marketeer.body"
+	},
+	"mathHat": {
+		"headline": "the Math Hat",
+		"subheadline": "**Math** hat, not meth-head.",
+		"body": "…"
+	},
+	"comingSoon": {
+		"headline": "Coming soon",
+		"subheadline": "What's next?",
+		"body": "…"
+	},
+	"partyHat": {
+		"headline": "the Party Hat",
+		"subheadline": "Let's ~~party~~ work together!",
+		"body": "…"
 	}
 }
