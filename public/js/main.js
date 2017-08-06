@@ -46,11 +46,15 @@ jQuery(function($){
 	  			return $(this).data('translation-key'); 
 	  		})),
 	  		transformers: $.makeArray($translatables.map(function(){ 
-	  			return $(this).data('translation-transformer'); 
+	  			return $(this).data('translation-transformer') || ''; 
 	  		}))
 	  	}, function(data) {
 	  		$translatables.each(function(index) {
-	  			$(this).html(data.values[index]);
+	  			if(data.destinations[index]) {
+					$(this)[data.destinations[index]](data.values[index]);
+	  			} else {
+	  				$(this).html(data.values[index]);
+	  			}
 	  		});
 	  	});
 	  }

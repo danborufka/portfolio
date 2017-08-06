@@ -83,24 +83,36 @@ app.post('/translate', (req, res) => {
 	const keys = _.get(req.body, 'keys', []);
 	const language = _.get(req.body, 'language');
 	const transformers = _.get(req.body, 'transformers', []);
-	const _ALLOWED_TRANSFORMERS = ['_', 'marked'];
+	const _ALLOWED_TRANSFORMERS = ['_', 'marked','destination'];
+	let response_json = {
+		destinations: []
+	};
+
 
 	switchLang(req, res, language);
 
-	res.json({ 
-		values: _.map(	keys, 
-						(key, i) => {
-							var value = data.__({phrase: key, locale: language});
-							if(transformers[i]) {
-								if(_ALLOWED_TRANSFORMERS.indexOf(transformers[i].split('.')[0]) > -1) {
-									return eval(transformers[i])(value);
-								}
-								return value;
-							}
-							return value;
-						}
-					) 
-	});
+	response_json.values = _.map(	keys, 
+									(key, i) => {
+										const value = data.__({phrase: key, locale: language});
+
+										if(transformers[i]) {
+											const parts = transformers[i].split('.');
+
+											if(_ALLOWED_TRANSFORMERS.indexOf(parts[0]) > -1) {
+
+												if(parts[0] === 'destination') {
+													response_json.destinations[i] = parts[1];
+													return value;
+												}
+												return eval(transformers[i])(value);
+											}
+											return value;
+										}
+										return value;
+									}
+								);
+
+	res.json(response_json);
 });
 
 // hat routes

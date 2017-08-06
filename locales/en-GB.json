@@ -4,6 +4,30 @@
 		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant.",
 		"hats": "Over 16 years, I was able to put on a lot of different hats:"
 	},
+	"subscribe": {
+		"headline": "Subscribe here to get an email once the blog is online!",
+		"cta": "Subscribe me up, Scotty!",
+		"email": "Email Address",
+		"firstName": "First Name",
+		"lastName": "Last Name",
+		"required": "required fields",
+		"errors": {
+			"required": "This field is a required field.",
+			"maxlength": "Please enter a maximum of {0} characters.",
+			"minlength": "Please enter at least {0} characters",
+			"rangelength": "Please enter at least {0} and a maximum of {1} characters.",
+			"email": "Please enter a valid email address.",
+			"url": "Please enter a valid URL.",
+			"date": "Please enter a valid date.",
+			"number": "Please enter a number.",
+			"digits": "Please only enter digits.",
+			"equalTo": "Please repeat the same value.",
+			"range": "Please enter a value between {0} and {1}.",
+			"max": "Please enter a value smaller or equal to {0}.",
+			"min": "Please enter a value higher or equal to {0}.",
+			"creditcard": "Please enter a valid creditcard number."
+		}
+	},
 	"designer": {
 		"headline": "the Designer",
 		"subheadline": "This is where I draw the line.",
@@ -12,7 +36,9 @@
 	"linguist": {
 		"headline": "the Linguist",
 		"subheadline": "Learning languages should be fun.",
-		"p1": "We teach languages the same way we teach History or Math.  \nPeople who venture into new languages quickly find themselves frustrated because it feels like **too much** commitment in **time and effort**. Some learning apps even make you feel dumb. I believe there has to be a breaking change in _how_ we teach languages."
+		"p1": "Sadly, we teach languages the same way we teach History or Math.  \nNew language students are quickly discouraged because it feels like **too much** commitment in **time and effort**. In addition, the course is not revolving around their interests and needs. There has to be a breaking change in _how_ we teach languages.",
+		"p2": "I have dedicated a lot of my work life on UI/UX (user interface and user experience) and marketing, while spending my pastime on languages.  \nA ton of shortcomings of **modern language teaching** can be counteracted with a lot of what I have learned in computer science, design, and marketing.  \n  \n<u>As such I have made it my mission to make learning of languages fun again.</u>",
+		"blogIntro": "Using my coding skills I started to create small games for rapid language learning that I will soon share – along with my whole approach – on a blog."
 	},
 	"animator": {
 		"headline": "the Animator"
