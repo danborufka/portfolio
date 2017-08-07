@@ -46,7 +46,7 @@ let data = {
 i18n.configure({
 	defaultLocale: 	data.language,
     directory: 		__dirname + '/locales',
-    locales: 		['en-US', 'en-GB', 'de-DE'],
+    locales: 		['en-US', 'de-DE'],
 	objectNotation: true,
 	register: data
 });
