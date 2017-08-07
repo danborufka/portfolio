@@ -4,6 +4,7 @@ const i18n 				= require('i18n');
 const marked 			= _.partialRight(require('marked').inlineLexer, []);
 const express 			= require('express');
 const bodyParser 		= require('body-parser');
+const compression 		= require('compression');
 const cookieParser 		= require('cookie-parser');
 const template_engines 	= require('consolidate');
 
@@ -13,12 +14,26 @@ const app 				= express();
 let data = {
 	app,
 
+	__translations: {},
+
 	base: 		 '',
 	getting: 	 '',
 	language: 	 'en-US',
 
 	include: 	 file => _.template(fs.readFileSync(app.get('views') + '/' + file, 'utf8'))(data),
 	getLanguage: () => data.language.split('-').join(' (').toUpperCase() + ')',
+
+	__current(translation) {
+		return translation + '.' + _.get(data.__translations, translation, 0);
+	},
+	__next(translation) {
+		if(_.has(data.__translations, translation)) {
+			data.__translations[translation]++;
+		} else {
+		 	data.__translations[translation] = 0;
+		}
+		return translation + '.' + data.__translations[translation];
+	},
 
 	page: 		 {
 				 	styles:  	[],
@@ -47,6 +62,7 @@ app.use(i18n.init);
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(compression());
 
 function switchLang(req, res, language) {
 	if(language) {
@@ -62,6 +78,8 @@ function switchLang(req, res, language) {
 app.use(function switchLanguageMW(req, res, next) {
 	var language = _.get(req.cookies, 'polygoat-portfolio-language');
 	switchLang(req, res, language);
+
+	data.__translations = {};	// reset translations counters
 
   	next();
 });
@@ -101,7 +119,7 @@ app.post('/translate', (req, res) => {
 											if(_ALLOWED_TRANSFORMERS.indexOf(parts[0]) > -1) {
 
 												if(parts[0] === 'destination') {
-													response_json.destinations[i] = parts[1];
+													response_json.destinations[i] = parts.slice(1).join('.');
 													return value;
 												}
 												return eval(transformers[i])(value);

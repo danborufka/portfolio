@@ -51,11 +51,20 @@ jQuery(function($){
 	  	}, function(data) {
 	  		$translatables.each(function(index) {
 	  			if(data.destinations[index]) {
-					$(this)[data.destinations[index]](data.values[index]);
+
+	  				var parts = data.destinations[index].split('.');
+
+	  				if(parts.length > 1) {
+						$(this)[parts[0]](parts[1], data.values[index]);
+	  				} else {
+						$(this)[parts[0]](data.values[index]);
+	  				}
+
 	  			} else {
 	  				$(this).html(data.values[index]);
 	  			}
 	  		});
+	  		lightbox.init();
 	  	});
 	  }
 

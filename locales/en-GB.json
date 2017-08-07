@@ -29,9 +29,14 @@
 		}
 	},
 	"designer": {
+		"0": "I don't seek out design, but _it_ keeps finding _me_.  \nI had 4 years of polytechnic education in Vienna to learn how to wrangle computer graphics, technical drawing, matte painting, and oil painting classes at the Academy of Art University in San Francisco.",
+		"1": "Starting out as graphic designer, my commissions included illustrations, print and web design, matte paintings, projection mappings, and much more.",
+		"2": "During my work in and for ad agencies like [isobar](http://www.isobar.com/at/en/work/), I had the opportunity to work for brands like Disney, Danone, LG, and .",
 		"headline": "the Designer",
 		"subheadline": "This is where I draw the line.",
-		"body": " "
+		"posters": {
+			"allianz": "Illustration for Allianz Assistance Car Insurance"
+		}
 	},
 	"linguist": {
 		"headline": "the Linguist",
