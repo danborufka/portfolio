@@ -1,20 +1,17 @@
-// colors:
-
-$main_ink_color: 	#262a40;
-$main_bg_color: 	#f3cfa6;
+@import 'vars';
 
 // fonts:
 @font-face {
 							font-family: 		'Miso Light';
 							font-style: 		normal;
 							font-weight: 		100;
-							src: 				local('Miso Light'), url('miso-light.woff') format('woff');
+							src: 				url('miso-light.woff') format('woff'), local('Miso Light');
 }
 @font-face {
 							font-family: 		'Miso';
 							font-style: 		normal;
 							font-weight: 		normal;
-							src: 				local('Miso'), url('miso.woff') format('woff');
+							src: 				url('miso.woff') format('woff'), local('Miso Regular');
 }
 @font-face {
 							font-family: 		'Miso Bold';
@@ -177,7 +174,7 @@ p 						{
 .after-before 			{	
 							display: 			block;
 							position: 			relative;
-	img 				{
+img 					{
 							transition: 		.4s ease all;
 		&:first-child 	{
 							position: 			absolute;
