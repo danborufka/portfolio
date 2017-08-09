@@ -2,8 +2,8 @@
 		</div>
 	<% } %>
 		<div class="row bar">
-			© Borufka 2017.
-			<a href="mailto:dan@polygoat.org">Contact me!</a>
+			© Borufka <%= (new Date).getFullYear() %>.
+			<a href="mailto:dan@polygoat.org" class="translatable" data-translation-key="contact.cta"><%= __('contact.cta') %></a>
 		</div>
 	<% if(page.uri.split('.')[0] === 'home') { %>
 	</div>

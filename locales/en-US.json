@@ -4,6 +4,9 @@
 		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant.",
 		"hats": "Over 16 years, I was able to put on a lot of different hats:"
 	},
+	"contact": {
+		"cta": "Contact me!"
+	},
 	"subscribe": {
 		"headline": "Subscribe here to get an email once the blog is online!",
 		"cta": "Subscribe me up, Scotty!",
@@ -35,7 +38,15 @@
 		"headline": "the Designer",
 		"subheadline": "This is where I draw the line.",
 		"posters": {
-			"allianz": "Illustration for Allianz Assistance Car Insurance"
+			"allianz": "Illustration for Allianz Assistance Car Insurance",
+			"dan": "Self-Portrait (Digitally Retouched Charcoal)",
+			"kenya": "Illustration Commission for an NGO",
+			"mill": "Charcoal on Paper",
+			"creperie": "Time Card for 'la Creperie' Restaurant",
+			"oil": "Oil on Canvas",
+			"sirenio": "Business Cards for Sirenio",
+			"spices": "Vector Graphics Poster (yes, those are all paths…)",
+			"svoboda": "Illustration for Furniture Store Svoboda"
 		}
 	},
 	"linguist": {
@@ -74,5 +85,10 @@
 		"headline": "the Party Hat",
 		"subheadline": "Let's ~~party~~ work together!",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
+	},
+	"undefined": {
+		"headline": "undefined.headline",
+		"subheadline": "undefined.subheadline",
+		"body": "undefined.body"
 	}
 }
