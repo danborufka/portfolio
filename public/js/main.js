@@ -89,4 +89,35 @@ jQuery(function($){
 			
 			event.preventDefault();	
 		});
+
+	var _afterBeforeTimeout = -1;
+	var _afterBeforeX = 0;
+
+	$('.after-before')
+		.each(function() {
+			var $this = $(this);
+			_afterBeforeX = ($this.width()/2);
+			$this.find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
+		})
+		.on('mousemove', function(event){
+			clearTimeout(_afterBeforeTimeout);
+			_afterBeforeX = event.offsetX;
+			$(this).find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
+		})
+		.on('mouseenter', function(event) {
+			clearTimeout(_afterBeforeTimeout);
+			$(this).find('img:first').stop();
+			event.stopImmediatePropagation();
+		})
+		.on('mouseout', function(event) {
+			var $this = $(this);
+			var $img = $this.find('img:first').stop().css('fontSize', _afterBeforeX);
+
+			_afterBeforeTimeout = setTimeout(function() {
+				$img.animate({ fontSize: $this.width()/2 }, { step: function(now) {
+					$img.css('clip', 'rect(0,' + now + 'px,500px,0)');
+				}}, 2000);
+			}, 1000);
+			event.stopImmediatePropagation();
+		});
 });
