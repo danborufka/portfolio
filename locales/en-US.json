@@ -42,12 +42,15 @@
 			"dan": "Self-Portrait (Digitally Retouched Charcoal)",
 			"kenya": "Illustration Commission for an NGO",
 			"mill": "Charcoal on Paper",
-			"creperie": "Time Card for 'la Creperie' Restaurant",
 			"oil": "Oil on Canvas",
 			"sirenio": "Business Cards for Sirenio",
 			"spices": "Vector Graphics Poster (yes, those are all paths…)",
 			"svoboda": "Illustration for Furniture Store Svoboda",
 			"disturbia": "Pen on Paper"
+		},
+		"works": {
+			"creperie": "Time Card for 'la Creperie' Restaurant",
+			"summerToWinter": "Summer-to-Winter Conversion Matte Painting"
 		}
 	},
 	"linguist": {
