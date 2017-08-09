@@ -54,11 +54,11 @@
 		}
 	},
 	"linguist": {
+		"0": "Leider unterrichten wir Sprachen genau so wie Geschichte oder Mathematik.  \nNeue Sprachschüler sind schnell entmutigt, weil es sich nach zu **viel Arbeit und Zeit** anfühlt. Außerdem dreht es sich in dem Kurs nicht nach ihren Interessen und Bedürfnissen. Wir müssen völlig umdenken, _wie_ wir Sprachen unterrichten.",
+		"1": "Ich habe einen Großteil meiner Arbeitszeit in UI/UX (User Interface und User Experience) und Marketing gesteckt, während meine Freizeit für Sprachen herhalten musste.  \nEine Unmenge der Probleme von **modernem Sprachunterricht** kann mit meinen Erfahrungen aus Informatik, Design, und Marketing getilgt werden.  \n  \n<u>So habe ich es mir zum Ziel gesetzt, Leuten zur Freude am Sprachenlernen zurückzuverhelfen.</u>",
+		"2": "Mit meinen Programmier-Kentnissen habe ich begonnen, kleine Spiele zum Sprachenlernen zu bauen, die ich bald zusammen mit meiner Herangehensweise auf einem Blog veröffentliche.",
 		"headline": "der Linguist",
-		"subheadline": "Sprachenlernen muss Spaß machen.",
-		"p1": "Leider unterrichten wir Sprachen genau so wie Geschichte oder Mathematik.  \nNeue Sprachschüler sind schnell entmutigt, weil es sich nach zu **viel Arbeit und Zeit** anfühlt. Außerdem dreht es sich in dem Kurs nicht nach ihren Interessen und Bedürfnissen. Wir müssen völlig umdenken, _wie_ wir Sprachen unterrichten.",
-		"p2": "Ich habe einen Großteil meiner Arbeitszeit in UI/UX (User Interface und User Experience) und Marketing gesteckt, während meine Freizeit für Sprachen herhalten musste.  \nEine Unmenge der Probleme von **modernem Sprachunterricht** kann mit meinen Erfahrungen aus Informatik, Design, und Marketing getilgt werden.  \n  \n<u>So habe ich es mir zum Ziel gesetzt, Leuten zur Freude am Sprachenlernen zurückzuverhelfen.</u>",
-		"blogIntro": "Mit meinen Programmier-Kentnissen habe ich begonnen, kleine Spiele zum Sprachenlernen zu bauen, die ich bald zusammen mit meiner Herangehensweise auf einem Blog veröffentliche."
+		"subheadline": "Sprachenlernen muss Spaß machen."
 	},
 	"marketeer": {
 		"headline": "der Werber",
