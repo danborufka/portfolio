@@ -4,6 +4,7 @@ jQuery(function($){
 	var $vr 		= $('.vr');
 	var $bar 		= $('.bar');
 
+/*
 	$container.height($win.height());
 
 	_automated = true;
@@ -28,4 +29,6 @@ jQuery(function($){
   	}, 900);
 
   	_automated = false;
+
+    */
 });

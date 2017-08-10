@@ -1,13 +1,18 @@
-@import 'main';
+@import 'vars';
 
 p                       {
 							text-align: 		center;
+}
+
+.spacer 				{
+							
 }
 
 .logo 					{
 							display: 			block;
 							margin: 			0 auto;
 							max-width: 			200px;
+							transform: 			translateX(5px);	// account for goat's off-center ear
 	h1 					{
 							font-size: 			44px;
 							padding-left: 		24px;

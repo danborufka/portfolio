@@ -1,13 +1,9 @@
-	<% if(page.uri.split('.')[0] !== 'home') { %>
-		</div>
-	<% } %>
 		<div class="row bar">
 			© Borufka <%= (new Date).getFullYear() %>.
 			<a href="mailto:dan@polygoat.org" class="translatable" data-translation-key="contact.cta"><%= __('contact.cta') %></a>
-		</div>
-	<% if(page.uri.split('.')[0] === 'home') { %>
+		</div>	
 	</div>
-	<% } %>
+	
 	<!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
 	<!-- <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 	<script src="js/libs/jquery-1.11.3.min.js"></script>

@@ -35,6 +35,11 @@ body {
 							color: 				$main_ink_color;
 							font-family: 		Miso, DIN, sans-serif;
 							font-size: 			28px;
+							position: 			absolute;
+							bottom: 			0;
+							left: 				0;
+							right: 				0;
+							top: 				0;
 }
 
 a,
@@ -207,7 +212,7 @@ img 					{
 }
 
 .vr 					{
-							border-right: 		4px dotted rgba(0,0,0,.2);
+							border-right: 		3px dotted rgba(0,0,0,.2);
 							margin: 			0 auto;
 							min-height: 		32px;
 							width: 				1px;
@@ -225,7 +230,7 @@ img 					{
 							bottom: 			-30px;
 							left: 				0;
 							position: 			absolute;
-							right: 				15px;
+							right: 				0px;
 
 	}
 	p 					{
@@ -272,16 +277,29 @@ img 					{
 }
 
 #languageSwitch 		{
-							color: 		$main_ink_color;
-							cursor: 	pointer;
-							display: 	inline-block;
-							height: 	40px;
-							opacity: 	.6;
-							position: 	absolute;
-							right: 		110px;
-							top: 		76px;
-							transition: .2s ease all;
+							color: 				$main_ink_color;
+							cursor: 			pointer;
+							display: 			inline-block;
+							height: 			40px;
+							opacity: 			.6;
+							position: 			absolute;
+							right: 				110px;
+							top: 				76px;
+							transition: 		.2s ease all;
 	&:hover				{
-							opacity: 	1;
+							opacity: 			1;
 	}
+}
+
+.flex-container 		{
+							display: 			flex;
+							align-items: 		stretch;
+							height: 			100vh;
+	&.vertical 			{
+							flex-direction: 	column;
+	}
+}
+
+.vspacer 				{
+							flex-grow: 			1;
 }
