@@ -31,6 +31,9 @@
 			"creditcard": "Bitte gib eine gültige Kreditkartennummer ein."
 		}
 	},
+	"lightbox": {
+		"label": "Bild %1 von %2"
+	},
 	"animator": {
 		"headline": "der Animator",
 		"subheadline": "Coming soon",
