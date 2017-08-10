@@ -88,7 +88,7 @@ app.use(function switchLanguageMW(req, res, next) {
 app.get('/', (req, res) => {
 	data.page.uri = 'home.html';
 	data.page.styles = ['css/home.css'];
-	data.page.scripts = ['js/main.js', 'js/home.js'];
+	data.page.scripts = [];
 
 	data.__ = req.__;
 	data.marked = (...arguments) => marked(req.__.apply(req, arguments));
@@ -105,7 +105,6 @@ app.post('/translate', (req, res) => {
 	let response_json = {
 		destinations: []
 	};
-
 
 	switchLang(req, res, language);
 
@@ -142,7 +141,6 @@ app.get('/hats/:hat', (req, res) => {
 	_.extend(data.page, {
 		uri: 		'hat.html',
 		styles: 	['css/pages.css'],
-		scripts: 	['js/main.js'],
 		title: 		`Dan Borufka, ${title}`,
 	});
 
