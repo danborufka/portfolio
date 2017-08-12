@@ -66,7 +66,8 @@
 	"animator": {
 		"headline": "the Animator",
 		"subheadline": "work in progress",
-		"body": "I had 2 years of photography education at [the Grafische](http://www.graphische.net/) and my first internship with a photographer, where I learned to . While at <abbr title='Academy of Art University'>AAU</abbr> I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke"
+		"0": "I have earned a BFA in Visual Effects from the Academy of Art University in SF, majoring in animation. Compositing and Matte Painting have always been a passion of mine, and I was able to put my knowledge to use working as compositor for Dropout and Studio 400A.",
+		"1": "While at school, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke. The \"Delaunay Triangulation Brush\""
 	},
 	"copywriter": {
 		"headline": "the Copywriter",
