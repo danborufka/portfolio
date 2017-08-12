@@ -80,7 +80,6 @@ app.use(function switchLanguageMW(req, res, next) {
 	switchLang(req, res, language);
 
 	data.__translations = {};	// reset translations counters
-
   	next();
 });
 
@@ -98,13 +97,11 @@ app.get('/', (req, res) => {
 
 // route for reactive translation retrieval
 app.post('/translate', (req, res) => {
-	const keys = _.get(req.body, 'keys', []);
-	const language = _.get(req.body, 'language');
-	const transformers = _.get(req.body, 'transformers', []);
+	const keys 					= _.get(req.body, 'keys', 		  []);
+	const language 				= _.get(req.body, 'language' 		);
+	const transformers 			= _.get(req.body, 'transformers', []);
 	const _ALLOWED_TRANSFORMERS = ['_', 'marked','destination'];
-	let response_json = {
-		destinations: []
-	};
+	let response_json 			= { destinations: [] };
 
 	switchLang(req, res, language);
 
