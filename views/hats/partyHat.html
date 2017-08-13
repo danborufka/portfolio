@@ -1,0 +1,51 @@
+<p class="translatable" data-translation-key="<%= __next('partyHat') %>" data-translation-transformer="marked">
+	<%= marked(__current('partyHat')) %>
+</p>
+<br>
+<form action="/contact" method="post" id="contact-form" class="row p">
+	<div class="form-group col-md-6">
+	    <label for="contact_email"><span class="translatable" data-translation-key="contact.email"><%= __('contact.email') %></span><sup>*</sup></label>
+	    <input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="your@email.com" required="required">
+	</div>
+	<div class="form-group col-md-6">
+	    <label for="contact_name"><span class="translatable" data-translation-key="contact.name"><%= __('contact.name') %></span><sup>*</sup></label>
+	    <input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="Barack Obama" required="required">
+	</div>
+	<div class="form-group col-xs-12">
+	    <label for="contact_message"><span class="translatable" data-translation-key="contact.message"><%= __('contact.message') %></span><sup>*</sup></label>
+	    <textarea class="form-control" id="contact_message" name="contact_message" rows="6" required="required"></textarea>
+		<input class="translatable btn btn-primary pull-right" type="submit" value="<%= __('contact.send') %>" data-translation-key="contact.send" data-translation-transformer="destination.attr.value">
+		<span class="help-block error"></span>
+	</div>
+</form>
+<script>
+	setTimeout(function() {
+		jQuery(function($) {
+			$(document)
+				.on('change blur', ':input', function(event) {
+					$(this).parent().removeClass('has-error');
+					$('.help-block').empty();
+				})
+				.on('submit', '#contact-form', function(event) {
+					var inputs = $(this).serializeArray().reverse();
+
+					$.each(inputs, function() {
+						if(!this.value.length) {
+							var $field = $('#' + this.name);
+							var label = $field.prev('label').text();
+
+							label = label[0].toLowerCase() + label.slice(1);
+
+							$('.help-block').text(
+								"<%= __('contact.error') %>".replace('%s', 
+									label.replace(/[^a-z ]*/g, '')
+								)
+							);
+							$field.parent().addClass('has-error');
+							event.preventDefault();
+						}
+					});
+				});
+		});
+	}, 0);
+</script>

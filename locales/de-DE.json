@@ -5,7 +5,15 @@
 		"hats": "In 16 Jahren konnte ich etliche Hüte tragen:"
 	},
 	"contact": {
-		"cta": "Kontaktiert mich!"
+		"cta": "Kontaktiert mich!",
+		"name": "Dein Name",
+		"email": "Deine E-Mail Adresse",
+		"message": "Deine Nachricht",
+		"error": "Bitte gib %s an!",
+		"send": "Abschicken",
+		"sent": "Nachricht verschickt!",
+		"body": "Wir sind in Kürze in Kontakt. Einstweilen springen wir zurück zur Homepage …",
+		"thanks": "Vielen Dank!"
 	},
 	"subscribe": {
 		"headline": "Hier anmelden um eine E-Mail zu erhalten wenn der Blog online ist!",
@@ -40,7 +48,7 @@
 		"body": "…"
 	},
 	"comingSoon": {
-		"headline": "demnächst …",
+		"headline": "Coming soon",
 		"subheadline": "Was nun?",
 		"body": "…"
 	},
@@ -84,13 +92,23 @@
 		"body": "…"
 	},
 	"mathHat": {
+		"0": "Derzeit arbeite ich an einer [Animations-Engine für Vektorgrafiken](https://github.com/danborufka/danimator) mit ent&shy;sprech&shy;en&shy;dem Interface zum Animieren der einzelnen Segmente. <br>",
+		"1": "Wenn ich nicht gerade als Webdesigner und Entwickler freiberuflich tätig war, hatte ich die Möglichkeit, unter die Haube etlicher Agenturen schauen zu dürfen – von [One-Man](http://www.bindertrittenwein.com)-[Shows](http://www.i-kiu.at/) zu [multinationalen](http://www.dentsuaegisnetwork.com/) [Netzwerken](http://www.isobar.com) –, und letztens gar [einem Startup](https://angel.co/sirenio) als Herr der UI/UX.",
+		"2": "mathHat.2",
+		"3": "mathHat.3",
+		"4": "mathHat.4",
 		"headline": "der Entwickler",
-		"subheadline": "Coming soon",
-		"body": "…"
+		"subheadline": "Die Welt wäre eine bessere, wenn alle JavaScript sprächen.",
+		"body": "…",
+		"works": {
+			"danimator": "**Danimator.js** Animations-Engine Interface auf Basis von PaperJS",
+			"delaunay": "Delanuay Triangulation Brush für Illustrator",
+			"sirenio": "Meteor-basierte Web App: Kommunikations-Plattform Sirenio"
+		}
 	},
 	"partyHat": {
 		"headline": "der Partyhut",
-		"subheadline": "Coming soon",
-		"body": "…"
+		"subheadline": "Lasst uns zusammen ~~feiern~~ arbeiten!",
+		"0": "Ich bin für jede Art von Zusammenarbeit offen und freue mich auf euren Input!  \nSchreibt mir zwei Zeilen!"
 	}
 }

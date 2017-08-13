@@ -30,8 +30,7 @@
 }
 
 body {
-							background: 		$main_bg_color url('../img/BG.jpg') no-repeat;
-							background-size: 	cover;
+							background-color: 	$main_bg_color;
 							color: 				$main_ink_color;
 							font-family: 		Miso, DIN, sans-serif;
 							font-size: 			28px;
@@ -59,7 +58,7 @@ img 					{
 							margin: 			0 auto;
 	}						
 }
-p 						{
+p, .p 					{
 							text-align: 		justify;
 							padding-left: 		20%;
 							padding-right: 		20%;
@@ -70,6 +69,24 @@ p 						{
 	}
 }
 
+textarea + input 		{
+							margin-top: 		20px;
+}
+
+.btn 					{
+	font-size: 80%;
+}
+
+.container-fluid 		{
+							background: 		linear-gradient(135deg, $main_bg_color, #e3d3d3);
+}
+
+.help-block 			{
+							margin-top: 		20px;
+	&.error 			{
+							color: 				#a94442;
+	}						
+}
 
 .modal-backdrop.in 		{
 						    opacity: 			.8;
@@ -162,6 +179,10 @@ p 						{
 							margin-bottom: 		30px;	
 							opacity: 			.8;
 } 
+
+.form-control 			{
+							font-size: 			18px;
+}
 
 .lightbox 				{
 	.lb-outerContainer 	{
@@ -287,6 +308,7 @@ img 					{
 	body.resizing & 	{
 							opacity: 			1;
 							height: 			100%;
+							min-height: 		100%;
 	}
 }
 

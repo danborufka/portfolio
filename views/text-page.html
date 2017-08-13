@@ -13,5 +13,9 @@
 </div>
 <% } %>
 <div class="row paper">
-	<%= include( page.subpage ) %>
+	<% if(page.subpage) { %>
+		<%= include( page.subpage ) %>
+	<% } else { %>
+		<%= page.body %>
+	<% } %>
 </div>

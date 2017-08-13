@@ -3,6 +3,7 @@ const fs 				= require("fs");
 const i18n 				= require('i18n');
 const marked 			= _.partialRight(require('marked').inlineLexer, []);
 const express 			= require('express');
+const nodemailer		= require('nodemailer');
 const bodyParser 		= require('body-parser');
 const compression 		= require('compression');
 const cookieParser 		= require('cookie-parser');
@@ -129,8 +130,51 @@ app.post('/translate', (req, res) => {
 										return value;
 									}
 								);
-
 	res.json(response_json);
+});
+
+app.post('/contact', (req, res) => {
+	const name 		= req.body.contact_name;
+	const email 	= req.body.contact_email;
+	const message 	= req.body.contact_message;
+
+	let transporter = nodemailer.createTransport({
+	    host: 	'smtp.gmail.com',
+	    port: 	465,
+	    secure: true, 	// secure:true for port 465, secure:false for port 587
+	    auth: {
+	        user: 'danborufka@gmail.com',
+	        pass: 'yac682Goo'
+	    }
+	});
+
+	let mailOptions = {
+	    from: 		`"${name} ☺" <${email}>`, 
+	    to: 		'dan@polygoat.org',
+	    subject: 	'New message from Polygoat contact form',
+	    text: 		message
+	};
+
+	// send mail with defined transport object
+	transporter.sendMail(mailOptions, (error, info) => {
+	    if (error) {
+	        return console.log(error);
+	    }
+
+	    data.__ = req.__;
+		data.marked = _createMarked(req);
+
+	    _.extend(data.page, {
+			uri: 		'text-page.html',
+			styles: 	['css/pages.css'],
+			headline: 	 data.__('contact.thanks'),
+			subheadline: data.__('contact.sent'),
+			title: 		data.__('contact.thanks'),
+			body: 		data.__('contact.body') + '<script>setTimeout(function(){location.href="/";}, 3000);</script>'
+		});
+	    
+		res.render('page.html', data);
+	});
 });
 
 // hat routes

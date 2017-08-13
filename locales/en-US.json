@@ -5,7 +5,15 @@
 		"hats": "Over 16 years, I was able to put on a lot of different hats:"
 	},
 	"contact": {
-		"cta": "Contact me!"
+		"cta": "Contact me!",
+		"name": "Your Name",
+		"email": "Your Email Address",
+		"message": "Your Message",
+		"error": "Please enter %s!",
+		"send": "Send!",
+		"sent": "Message sent.",
+		"body": "We will be in contact shortly. Let's redirect you back to the homepage …",
+		"thanks": "Thank you!"
 	},
 	"subscribe": {
 		"headline": "Subscribe here to get an email once the blog is online!",
@@ -78,7 +86,7 @@
 	"marketeer": {
 		"headline": "Coming Soon",
 		"_headline": "the Marketeer",
-		"subheadline": "marketeer.subheadline",
+		"subheadline": "Coming Soon",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"mathHat": {
@@ -91,7 +99,8 @@
 		"subheadline": "The world would be a better place if everyone would speak JavaScript.",
 		"works": {
 			"danimator": "**Danimator.js** Animation Engine Interface built on top of PaperJS",
-			"delaunay": "Delaunay Triangulation Brush for Illustrator"
+			"delaunay": "Delaunay Triangulation Brush for Illustrator",
+			"sirenio": "Meteor-based Web App: communications platform Sirenio"
 		}
 	},
 	"comingSoon": {
@@ -102,6 +111,6 @@
 	"partyHat": {
 		"headline": "the Party Hat",
 		"subheadline": "Let's ~~party~~ work together!",
-		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
+		"0": "I'm open to any kind of collaboration and happy to listen to your input!  \nFeel free to drop me a line!"
 	}
 }
