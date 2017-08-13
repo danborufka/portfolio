@@ -64,6 +64,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(compression());
 
+function _createMarked(req) {
+	return (...arguments) => marked(req.__.apply(req, arguments));
+}
+
 function switchLang(req, res, language) {
 	if(language) {
 		res.cookie('polygoat-portfolio-language', language);
@@ -90,7 +94,7 @@ app.get('/', (req, res) => {
 	data.page.scripts = [];
 
 	data.__ = req.__;
-	data.marked = (...arguments) => marked(req.__.apply(req, arguments));
+	data.marked = _createMarked(req);
 
 	res.render('page.html', data);
 });
@@ -142,7 +146,7 @@ app.get('/hats/:hat', (req, res) => {
 	});
 
 	data.__ = req.__;
-	data.marked = (...arguments) => marked(req.__.apply(req, arguments));
+	data.marked = _createMarked(req);
 	data.hat = hat;
 
 	if(fs.existsSync(`views/hats/${hat}.html`)) {

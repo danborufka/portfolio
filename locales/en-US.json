@@ -64,25 +64,34 @@
 		"subheadline": "Learning languages has to be fun."
 	},
 	"animator": {
-		"headline": "the Animator",
-		"subheadline": "work in progress",
-		"0": "I have earned a BFA in Visual Effects from the Academy of Art University in SF, majoring in animation. Compositing and Matte Painting have always been a passion of mine, and I was able to put my knowledge to use working as compositor for Dropout and Studio 400A.",
-		"1": "While at school, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke. The \"Delaunay Triangulation Brush\""
+		"0": "I have earned a BFA in Visual Effects from the Academy of Art University in SF, majoring in animation. Compositing and Matte Painting have always been a passion of mine, and I was able to put my knowledge to use working as compositor for VFX studios Dropout and [Studio 400A](https://www.linkedin.com/company-beta/2599944/).",
+		"headline": "Coming Soon",
+		"_headline": "the Animator",
+		"subheadline": "work in progress"
 	},
 	"copywriter": {
-		"headline": "the Copywriter",
+		"headline": "Coming Soon",
+		"_headline": "the Copywriter",
 		"subheadline": "I'm typing as fast as humanly possible",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"marketeer": {
-		"headline": "the Marketeer",
+		"headline": "Coming Soon",
+		"_headline": "the Marketeer",
 		"subheadline": "marketeer.subheadline",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"mathHat": {
+		"0": "I am currently working on an [animation engine for vector graphics](https://github.com/danborufka/danimator) with an according UI to animate paths on a segment point level. <br>",
+		"1": "I started out as Flash programmer, doing small agency work and entering the realm of web design. I got my first job because they stumbled upon my first interactive animation: a dinosaur that would pee himself after having pushed his bladder often enough.",
+		"2": "When I wasn't freelancing as web designer and developer, I had the opportunity to familiarize with the inner workings of agencies ranging from small [one-man](http://www.i-kiu.at/) [shops](http://www.bindertrittenwein.com/) to [multinational](http://www.dentsuaegisnetwork.com/) [networks](http://www.isobar.com).",
+		"3": "I ended up hiring programmers for the teams I lead, consulting other businesses with their coding workflow, and even teaching a semester of programming at the [SAE institute](http://www.sae.edu/aut/).",
+		"4": "While at <abbr title='Academy of Art University'>AAU</abbr>, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke.",
 		"headline": "the Programmer",
 		"subheadline": "The world would be a better place if everyone would speak JavaScript.",
-		"body": "I started out as Flash programmer, doing small agency work and entering the realm of web design. "
+		"works": {
+			"danimator": "**Danimator.js** Animation Engine Interface built on top of PaperJS"
+		}
 	},
 	"comingSoon": {
 		"headline": "Coming soon",
