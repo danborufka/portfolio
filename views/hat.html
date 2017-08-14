@@ -1,9 +1,7 @@
 <div class="row">
 	<div class="col header">
 		<a class="heading" href="/" title="<%= __('home.back') %>"><h1 class="translatable" data-translation-key="<%= hat %>.headline" data-translation-transformer="_.startCase"><%= _.startCase(__(hat + '.headline')) %></h1></a>
-		<a class="next">
-			
-		</a>
+		<a class="next" rel="<%= hat %>"></a>
 		<a href="#languages" id="languageSwitch" data-toggle="modal" data-target="#languageModal" title="Switch language"><%= getLanguage() %></a>
 		<div class="brand">
 			<a href="." title="<%= __('home.back') %>"><img src="img/dan.png" alt="Dan, the Polygoat" height="100"></a>
