@@ -93,6 +93,16 @@ textarea + input 		{
 						    background: 		linear-gradient(to bottom, black, black, rgba($main_ink_color, .9));
 }
 
+a.heading 				{
+							border-bottom:		0px solid transparent;
+							transition: 		.4s all;
+	&:hover 			{
+							color: 				crimson;
+							text-decoration: 	none;
+							border-bottom:		3px solid crimson;
+	}
+} 				
+
 .modal 					{
 							color: 				$main_bg_color;
 							font-size: 			50px;
@@ -323,6 +333,7 @@ img 					{
 							top: 				76px;
 							transition: 		.2s ease all;
 	&:hover				{
+							color: 				crimson;
 							opacity: 			1;
 	}
 }

@@ -1,5 +1,6 @@
 {
 	"home": {
+		"back": "Back home",
 		"pipeline": "I survived the entire pipeline of the advertising industry …",
 		"jobs": "… working as illustrator, copywriter, conceptionist, project manager, web designer, senior full-stack developer, tech lead, and technical consultant.",
 		"hats": "Over 16 years, I was able to put on a lot of different hats:"
@@ -92,9 +93,9 @@
 	"mathHat": {
 		"0": "I am currently working on an [animation engine for vector graphics](https://github.com/danborufka/danimator) with an according UI to animate paths on a segment point level. <br>",
 		"1": "When I wasn't freelancing as web designer and developer, I had the opportunity to familiarize with the inner workings of agencies ranging from small [one-man](http://www.i-kiu.at/) [shops](http://www.bindertrittenwein.com/) to [multinational](http://www.dentsuaegisnetwork.com/) [networks](http://www.isobar.com), and joining [a startup](https://angel.co/sirenio) as UI/UX lead.",
-		"2": "I ended up hiring programmers for the teams I lead, consulting other businesses with their coding workflow, and teaching a semester of programming at the [SAE institute](http://www.sae.edu/aut/).",
-		"3": "While at <abbr title='Academy of Art University'>AAU</abbr>, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke (using JavaScript and Python mostly).",
-		"4": "I originally started out as Flash programmer, doing small agency work and entering the realm of web design. I got my first job because they stumbled upon my first interactive animation: a dinosaur that would pee himself after having pushed his bladder often enough.",
+		"2": "I ended up hiring developers for the teams I lead, consulting other businesses with their coding workflow, and teaching a semester of programming at the [SAE institute](http://www.sae.edu/aut/).",
+		"3": "While at <abbr title='Academy of Art University in San Francisco'>AAU</abbr>, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke (using JavaScript and Python mostly).",
+		"4": "I originally started out as Flash programmer, doing small agency work and entering the realm of web design. I got my first job because the boss stumbled upon my first interactive animation: a dinosaur that would pee himself after having pushed his bladder often enough.",
 		"headline": "the Programmer",
 		"subheadline": "The world would be a better place if everyone would speak JavaScript.",
 		"works": {

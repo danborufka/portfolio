@@ -1,11 +1,12 @@
 {
 	"home": {
+		"back": "Zurück",
 		"pipeline": "Ich habe die gesamte Pipeline der Werbeindustrie überlebt …",
 		"jobs": "… in Positionen als Illustrator, Texter, Konzeptionist, Projectmanager, Webdesigner, senioriger Full-Stack Entwickler, Tech Lead, und technischer Berater.",
 		"hats": "In 16 Jahren konnte ich etliche Hüte tragen:"
 	},
 	"contact": {
-		"cta": "Kontaktiert mich!",
+		"cta": "Kontaktier mich!",
 		"name": "Dein Name",
 		"email": "Deine E-Mail Adresse",
 		"message": "Deine Nachricht",
@@ -45,11 +46,6 @@
 	"animator": {
 		"headline": "der Animator",
 		"subheadline": "Coming soon",
-		"body": "…"
-	},
-	"comingSoon": {
-		"headline": "Coming soon",
-		"subheadline": "Was nun?",
 		"body": "…"
 	},
 	"copywriter": {
@@ -94,21 +90,25 @@
 	"mathHat": {
 		"0": "Derzeit arbeite ich an einer [Animations-Engine für Vektorgrafiken](https://github.com/danborufka/danimator) mit ent&shy;sprech&shy;en&shy;dem Interface zum Animieren der einzelnen Segmente. <br>",
 		"1": "Wenn ich nicht gerade als Webdesigner und Entwickler freiberuflich tätig war, hatte ich die Möglichkeit, unter die Haube etlicher Agenturen schauen zu dürfen – von [One-Man](http://www.bindertrittenwein.com)-[Shows](http://www.i-kiu.at/) zu [multinationalen](http://www.dentsuaegisnetwork.com/) [Netzwerken](http://www.isobar.com) –, und letztens gar [einem Startup](https://angel.co/sirenio) als Herr der UI/UX.",
-		"2": "mathHat.2",
-		"3": "mathHat.3",
-		"4": "mathHat.4",
+		"2": "Letzten Endes habe ich Programmierer rekrutiert für die Teams, die ich leiten durfte, andere Firmen mit ihrem Entwicklungs-Workflow beraten, und ein Semester Codingklasse am [SAE Institut](http://www.sae.edu/aut/) unterrichtet.",
+		"3": "Während ich auf der <abbr title='Academy of Art University in San Francisco'>AAU</abbr> war, habe ich mir mit selbstgeschriebenen Plugins für Illustrator, After Effects, und Nuke einen Nebenverdienst gemacht (JavaScript und Python hauptsächlich).",
+		"4": "Ursprünglich Flash Programmierer, begann ich mit kleinen Agenturjobs um in der Branche Fuß zu fassen. Meinen ersten Job bekam ich, weil der Chef über meine erste interaktive Animation gestoßen war: einen Dinosaurier, der sich anpinkelt, wenn man oft genug auf die Blase gedrückt hatte.",
 		"headline": "der Entwickler",
 		"subheadline": "Die Welt wäre eine bessere, wenn alle JavaScript sprächen.",
-		"body": "…",
 		"works": {
 			"danimator": "**Danimator.js** Animations-Engine Interface auf Basis von PaperJS",
 			"delaunay": "Delanuay Triangulation Brush für Illustrator",
 			"sirenio": "Meteor-basierte Web App: Kommunikations-Plattform Sirenio"
 		}
 	},
+	"comingSoon": {
+		"headline": "Coming soon",
+		"subheadline": "Was nun?",
+		"body": "…"
+	},
 	"partyHat": {
 		"headline": "der Partyhut",
 		"subheadline": "Lasst uns zusammen ~~feiern~~ arbeiten!",
-		"0": "Ich bin für jede Art von Zusammenarbeit offen und freue mich auf euren Input!  \nSchreibt mir zwei Zeilen!"
+		"0": "Ich bin für jede Art von Zusammenarbeit offen und freue mich auf euren Input.  \nSchreibt mir zwei Zeilen!"
 	}
 }
