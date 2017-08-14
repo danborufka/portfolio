@@ -104,6 +104,9 @@ a.heading 				{
 							color: 				crimson;
 							text-decoration: 	none;
 							border-bottom:		3px solid crimson;
+		@media (max-width: $sm-break-point) {
+							border-bottom:		none;
+		}
 	}
 } 				
 
@@ -260,6 +263,9 @@ img 					{
 							transition: 		.2s ease all;
 							white-space: 		nowrap;
 							width: 				0;
+	@media (max-width: $sm-break-point) {
+							border-bottom: 		none;
+	}						
 	a:hover & 			{
 							width: 				80%;
 	}
