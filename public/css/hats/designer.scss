@@ -1,12 +1,14 @@
+@import "../vars";
+
 .poster-container 		{
-							position: 		relative;
-							padding-top: 	120px;
-							height: 		860px;
 	a 					{
 							display: 		inline-block;
 							cursor: 		pointer;
 							transition: 	.4s all ease;
 							transition-delay:.4s;
+		img 			{
+							max-width: 		100%;
+		}
 	}
 
 	&.hover  			{
@@ -40,46 +42,53 @@
 	}
 }
 
+@media (min-width: $sm-break-point) {
 
-.floating 				{
+	.poster-container 	{
+							position: 		relative;
+							padding-top: 	120px;
+							height: 		860px;
+	}
+	.floating 			{
 							position: 		absolute;
-}
+	}
 
-#poster_allianz 		{
+	#poster_allianz 	{
 							left: 			-80px;
 							top: 			-10px;
 							position: 		relative;
-}
-#poster_spices 			{
+	}
+	#poster_spices 		{
 							left: 			50%;
 							top: 			0;	
-}
-#poster_svoboda 		{
+	}
+	#poster_svoboda 	{
 							right: 			-10px;
 							top: 			70px;
-}
-#poster_oil1 			{
+	}
+	#poster_oil1 		{
 							left: 			0;
 							top: 			200px;
-}
-#poster_oil2 			{
+	}
+	#poster_oil2 		{
 							left: 			80px;
 							top: 			570px;
-}
-#poster_disturbia 		{
+	}
+	#poster_disturbia 	{
 							left: 			200px;
 							top: 			380px;
-}
-#poster_kenya 			{
+	}
+	#poster_kenya 		{
 							left: 			50%;
 							margin-left: 	-100px;
 							top: 			500px;
-}
-#poster_dan 			{
+	}
+	#poster_dan 		{
 							right: 			30px;
 							top: 			250px;
-}
-#poster_mill 			{
+	}
+	#poster_mill 		{
 							right: 			260px;
 							top: 			320px;
+	}
 }

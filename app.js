@@ -11,6 +11,16 @@ const template_engines 	= require('consolidate');
 
 const app 				= express();
 
+const _letters = {
+	a: 'animator', 
+	c: 'copywriter', 
+	d: 'designer', 
+	l: 'linguist', 
+	m: 'marketeer', 
+	c: 'math-hat', 
+	p: 'party-hat'
+};
+
 // app-wide data store (accessed from templates)
 let data = {
 	app,
@@ -184,6 +194,8 @@ app.get('/hats/:hat', (req, res) => {
 	var hat = _.camelCase(req.params.hat);
 	var title = _.startCase(hat.split('-').join(' ').toLowerCase());
 
+	var _lookup = _.values(_letters);
+
 	_.extend(data.page, {
 		uri: 		'hat.html',
 		scripts: 	[],
@@ -194,6 +206,7 @@ app.get('/hats/:hat', (req, res) => {
 	data.__ = req.__;
 	data.marked = _createMarked(req);
 	data.hat = hat;
+	data.nextHat = _lookup[_lookup.indexOf(hat) + 1];
 
 	if(fs.existsSync(`views/hats/${hat}.html`)) {
 		data.template = `hats/${hat}.html`;
@@ -206,16 +219,6 @@ app.get('/hats/:hat', (req, res) => {
 
 // shortcut routes
 app.get('/:letter([a-zA-Z])', (req, res) => {
-	var _letters = {
-		a: 'animator', 
-		c: 'copywriter', 
-		d: 'designer', 
-		l: 'linguist', 
-		m: 'marketeer', 
-		c: 'math-hat', 
-		p: 'party-hat'
-	};
-	
 	var letter = req.params.letter.toLowerCase();
 	res.redirect(`/hats/${_letters[letter]}`);
 });

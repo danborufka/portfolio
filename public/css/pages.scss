@@ -27,6 +27,11 @@ a.next                           {
                                     margin-left:      -70px;
                                     font-style:       italic;
                                     font-family:      'Nickainley-Normal', 'script';
+                                    opacity:           0;
+                                    transition:        $transition_time ease all;
+    .col.header:hover &         {
+                                    opacity:           1;
+    }
 }
 
 .paper                            {
@@ -38,7 +43,7 @@ p > a                             {
 
                                     cursor:           pointer;
                                     text-decoration:  underline;
-                                    transition:       .4s all ease;
+                                    transition:       $transition_time all ease;
 &:hover                           {
                                     color:            #d09522;
   }
@@ -55,6 +60,7 @@ p > a                             {
                                     margin:           0;
         }
     }
+    a.next,
     .brand,
     #languageSwitch             { 
                                     display:          none;
