@@ -163,6 +163,7 @@ app.post('/contact', (req, res) => {
 
 	    data.__ = req.__;
 		data.marked = _createMarked(req);
+		data.page.styles = data.page.scripts = [];
 
 	    _.extend(data.page, {
 			uri: 		'text-page.html',
@@ -185,6 +186,7 @@ app.get('/hats/:hat', (req, res) => {
 
 	_.extend(data.page, {
 		uri: 		'hat.html',
+		scripts: 	[],
 		styles: 	['css/pages.css'],
 		title: 		`Dan Borufka, ${title}`,
 	});

@@ -43,3 +43,18 @@ p > a                             {
                                     color:            #d09522;
   }
 }
+
+
+@media (max-width: $sm-break-point){
+    .heading                      {
+                                    margin-top:         0;
+                                    margin-bottom:      10px;    
+        h1                        {
+                                    margin-top:         0;
+        }
+    }
+    .brand,
+    #languageSwitch                { 
+                                    display:          none;
+    }
+}
