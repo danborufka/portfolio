@@ -1,12 +1,12 @@
 {
 	"home": {
-		"back": "Back home",
+		"back": "Retour accueil ",
 		"pipeline": "I survived the entire pipeline of the advertising industry …",
-		"jobs": "… working as illustrator, copywriter, concept developer, project&nbsp;manager, web&nbsp;designer, senior full-stack developer, tech&nbsp;lead, and technical&nbsp;consultant.",
+		"jobs": "… working as illustrator, copywriter, conceptionist, project&nbsp;manager, web&nbsp;designer, senior full-stack developer, tech&nbsp;lead, and technical&nbsp;consultant.",
 		"hats": "Over 16 years, I was able to put on a&nbsp;lot of different hats:",
 		"polygoat": {
-			"question": "Now what is a Polygoat?",
-			"answer": "A **Polyglot** is someone who speaks several languages.  \nA **Polygoat** is a goat that speaks several languages, including JavaScript."
+			"question": "Donc qu'est ce qu'est-ce qu'est un Polygoat?",
+			"answer": "Un **Polyglotte** est une personne qui parle plusieures langues.  \nUn **Polygoat** est une chèvre parlant plusieures langues, JavaScript y compris."
 		}
 	},
 	"contact": {
