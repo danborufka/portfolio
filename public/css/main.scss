@@ -107,6 +107,11 @@ a.heading 				{
 .modal 					{
 							color: 				$main_bg_color;
 							font-size: 			50px;
+
+	@media (max-width: 600px) {
+							font-size: 			30px;
+	}
+
 	a 					{
 							color: 				$main_bg_color;
 							transition: 		.2s ease all;
