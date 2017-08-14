@@ -3,7 +3,11 @@
 		"back": "Zurück",
 		"pipeline": "Ich habe die gesamte Pipeline der Werbeindustrie überlebt …",
 		"jobs": "… in Positionen als Illustrator, Texter, Konzeptionist, Projectmanager, Webdesigner, senioriger Full-Stack Entwickler, Tech-Lead, und technischer&nbsp;Berater.",
-		"hats": "In 16 Jahren konnte ich etliche Hüte tragen:"
+		"hats": "In 16 Jahren konnte ich etliche Hüte tragen:",
+		"polygoat": {
+			"question": "Was ist jetzt ein Polygoat?",
+			"answer": "Ein **Polyglot** ist eine Person, der mehrere Sprachen spricht.  \nEin **Polygoat** ist eine Ziege, die mehrere Sprachen spricht – einschließlich JavaScript."
+		}
 	},
 	"contact": {
 		"cta": "Kontaktier mich!",

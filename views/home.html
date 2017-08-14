@@ -23,7 +23,7 @@
 				<%= __('home.hats') %>
 			</div>
 			<div class="paper">
-				<div class="container" id="hats" style="margin-bottom: 80px;">
+				<div class="container" id="hats">
 					<a href="hats/designer" class="col-xs-12 col-sm-3" style="background-image:url(img/hats/designer.svg);">
 						<span class="underline">&nbsp;</span>
 						<span class="title translatable" data-translation-key="designer.headline"><%= __('designer.headline') %></span>
@@ -57,6 +57,14 @@
 						<span class="title translatable" data-translation-key="partyHat.headline"><%= __('partyHat.headline') %></span>
 					</a>
 				</div>
+			</div>
+			<div class="bar translatable" data-translation-key="home.polygoat.question">
+				<%= __('home.polygoat.question') %>
+			</div>
+			<div class="paper">
+				<p class="translatable" data-translation-key="home.polygoat.answer" data-translation-transformer="marked">
+					<%= marked('home.polygoat.answer') %>
+				</p>
 			</div>
 		</div>
 		<script src="js/libs/howler.core.min.js"></script>
