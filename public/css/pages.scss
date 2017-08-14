@@ -46,17 +46,22 @@ p > a                             {
 
 
 @media (max-width: $sm-break-point){
-    .heading                      {
-                                    margin-bottom:    30px;
+    .heading                    {
+                                	margin-bottom:    30px;
                                     padding-left:     15px;
                                     text-align:       center;
                                     width:            100%;
-        h1                        {
+        h1                      {
                                     margin:           0;
         }
     }
     .brand,
-    #languageSwitch                { 
+    #languageSwitch             { 
                                     display:          none;
     }
+
+ 	.paper p 					{ 		
+ 									padding-left:   40px;
+ 									padding-right: 	40px; 
+ 	}
 }
