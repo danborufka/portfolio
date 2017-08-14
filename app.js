@@ -21,7 +21,7 @@ const _letters = {
 	c: 'copywriter'
 };
 
-const _pages = ['designer', 'linguist', 'math-hat','party-hat'];
+const _pages = ['designer', 'linguist', 'mathHat','partyHat', 'designer'];
 
 // app-wide data store (accessed from templates)
 let data = {
@@ -193,8 +193,8 @@ app.post('/contact', (req, res) => {
 // hat routes
 app.get('/hats/:hat', (req, res) => {
 
-	var hat = _.camelCase(req.params.hat);
-	var title = _.startCase(hat.split('-').join(' ').toLowerCase());
+	const hat = _.camelCase(req.params.hat);
+	const title = _.startCase(hat.split('-').join(' ').toLowerCase());
 
 	_.extend(data.page, {
 		uri: 		'hat.html',
@@ -206,7 +206,14 @@ app.get('/hats/:hat', (req, res) => {
 	data.__ = req.__;
 	data.marked = _createMarked(req);
 	data.hat = hat;
-	data.nextHat = _pages[_pages.indexOf(hat) + 1];
+
+	const nextHat = _pages.indexOf(hat);
+
+	if(nextHat > -1) {
+		data.nextHat = _.startCase(_pages[nextHat + 1]);
+	} else {
+		data.nextHat = false;
+	}
 
 	if(fs.existsSync(`views/hats/${hat}.html`)) {
 		data.template = `hats/${hat}.html`;
