@@ -39,7 +39,7 @@ body {
 							left: 				0;
 							right: 				0;
 							top: 				0;
-	@media (max-width: 640px) {
+	@media (max-width: $sm-break-point) {
 							font-size: 			24px;
 	};
 };
@@ -65,7 +65,7 @@ p, .p 					{
 							text-align: 		justify;
 							padding-left: 		20%;
 							padding-right: 		20%;
-	@media (max-width: 600px) 
+	@media (max-width: $sm-break-point) 
 	 					{
 	 						hyphens: 			auto;
 							text-align: 		left;	
@@ -111,7 +111,7 @@ a.heading 				{
 							color: 				$main_bg_color;
 							font-size: 			200%;
 
-	@media (max-width: 600px) {
+	@media (max-width: $sm-break-point) {
 		a,
 		#languageModalLbl
 		 			{
@@ -269,6 +269,9 @@ img 					{
 							margin-top: 		3px;
 							position: 			absolute;
 							right: 				0;
+	@media (max-width: $sm-break-point) {
+							font-size: 			100%;
+	}
 }
 
 .vr 					{
@@ -301,9 +304,6 @@ img 					{
 							margin-bottom: 		0;
 							margin-top: 		3px;
 							text-align: 		center;
-							@media (max-width: 600px) {
-
-							}
 	}
 	a 					{
 							color: 				inherit;
