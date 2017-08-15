@@ -1,4 +1,7 @@
 {
+	"general": {
+		"next": "weiter"
+	},
 	"home": {
 		"back": "Zurück",
 		"pipeline": "Ich habe die gesamte Pipeline der Werbeindustrie überlebt …",

@@ -1,122 +1,125 @@
 {
+	"general": {
+		"next": "suivant"
+	},
 	"home": {
 		"back": "Retour accueil ",
-		"pipeline": "I survived the entire pipeline of the advertising industry …",
-		"jobs": "… working as illustrator, copywriter, conceptionist, project&nbsp;manager, web&nbsp;designer, senior full-stack developer, tech&nbsp;lead, and technical&nbsp;consultant.",
-		"hats": "Over 16 years, I was able to put on a&nbsp;lot of different hats:",
+		"pipeline": "J'ai survécu à toutes les tuyaux de l'industrie publicitaire …",
+		"jobs": "… travaillant comme illustrateur, publicitaire, concepteur, chef&nbsp;de&nbsp;projets, concepteur&nbsp;de&nbsp;web, développeur senior (full-stack), et direction et consultation&nbsp;technique.",
+		"hats": "En 16 ans, j'avais l'occasion de me coiffer de nombreux chapeaux:",
 		"polygoat": {
-			"question": "Donc qu'est ce qu'est-ce qu'est un Polygoat?",
+			"question": "Donc qu'est-ce que c'est un Polygoat?",
 			"answer": "Un **Polyglotte** est une personne qui parle plusieures langues.  \nUn **Polygoat** est une chèvre parlant plusieures langues, JavaScript y compris."
 		}
 	},
 	"contact": {
-		"cta": "Contact me!",
-		"name": "Your Name",
-		"email": "Your Email Address",
-		"message": "Your Message",
-		"error": "Please enter %s!",
-		"send": "Send!",
-		"sent": "Message sent.",
-		"body": "We will be in contact shortly. Let's redirect you back to the homepage …",
-		"thanks": "Thank you!"
+		"cta": "Veuillez me contacter!",
+		"name": "Votre nom",
+		"email": "Votre adresse email",
+		"message": "Votre message",
+		"error": "SVP indiquez %s!",
+		"send": "Envoyer!",
+		"sent": "Message envoyé.",
+		"body": "Nous allons être en contact bientôt. Allons en retour à la page d'accueil …",
+		"thanks": "Merci!"
 	},
 	"subscribe": {
-		"headline": "Subscribe here to get an email once the blog is online!",
-		"cta": "Subscribe me up, Scotty!",
-		"email": "Email Address",
-		"firstName": "First Name",
-		"lastName": "Last Name",
-		"required": "required fields",
+		"headline": "Abonnez-vous ici pour être informé lorsque le blog est en ligne!",
+		"cta": "Abonnes moi, Scotty!",
+		"email": "Adresse Email",
+		"firstName": "Prénom",
+		"lastName": "Surnom",
+		"required": "champs obligatoires",
 		"errors": {
-			"required": "This field is a required field.",
-			"maxlength": "Please enter a maximum of {0} characters.",
-			"minlength": "Please enter at least {0} characters",
-			"rangelength": "Please enter at least {0} and a maximum of {1} characters.",
-			"email": "Please enter a valid email address.",
-			"url": "Please enter a valid URL.",
-			"date": "Please enter a valid date.",
-			"number": "Please enter a number.",
-			"digits": "Please only enter digits.",
-			"equalTo": "Please repeat the same value.",
-			"range": "Please enter a value between {0} and {1}.",
-			"max": "Please enter a value smaller or equal to {0}.",
-			"min": "Please enter a value higher or equal to {0}.",
-			"creditcard": "Please enter a valid creditcard number."
+			"required": "Ce champ est obligatoire.",
+			"maxlength": "Veuillez indiquer un maximum de {0} caractères.",
+			"minlength": "Veuillez indiquer au moins {0} caractères",
+			"rangelength": "Veuillez indiquer au moins {0} et un maximum de {1} caractères.",
+			"email": "Veuillez indiquer une propre adresse email.",
+			"url": "Veuillez indiquer un propre URL.",
+			"date": "Veuillez indiquer une propre date.",
+			"number": "Veuillez indiquer un nombre.",
+			"digits": "Veuillez indiquer seulement chiffres.",
+			"equalTo": "Veuillez répeter la même valeur.",
+			"range": "Veuillez indiquer une valeur entre {0} et {1}.",
+			"max": "Veuillez indiquer une valeur inférieure ou égale à {0}.",
+			"min": "Veuillez indiquer une valeur supérieure ou égale à {0}.",
+			"creditcard": "Veuillez indiquer un propre numéro de carte credite."
 		}
 	},
 	"lightbox": {
-		"label": "Image %1 of %2"
+		"label": "Image %1 de %2"
 	},
 	"designer": {
-		"0": "I don't seek out design, but _it_ keeps finding _me_.  \nStarting out as graphic designer, my commissions included illustrations, print and web design, matte paintings, light projections, and much more.  \n",
-		"1": "During my work in and for ad agencies like [isobar](http://www.isobar.com/at/en/work/), I had the opportunity to work for brands like Bahlsen, Disney, Danone, Lebenshilfe, LG, Microsoft, Mondelez, UPC,&nbsp;…  \n",
-		"2": "I had 4 years of [Higher Technical College education](http://www.graphische.net/) in Vienna to learn how to wrangle computer graphics, and had technical drawing, matte painting, and oil painting classes at the [Academy of Art University](https://www.academyart.edu/) in San Francisco. <br><br>",
-		"headline": "the Designer",
-		"subheadline": "This is where I draw the line.",
+		"0": "Je ne cherche pas le graphisme, mais _ça_ ne cesse pas à _me_ retrouver.  \nCommençant comme graphiste, mes commandes se composaient d'illustrations, conception d'impression et de web, peintures de cache, projections lumineuses, et plus encore.  \n",
+		"1": "Pendant mon travail en – et pour – agences de pub comme [isobar](http://www.isobar.com/at/en/work/), j'avais la possibilité de travaillier pour marques comme Bahlsen, Disney, Danone, Lebenshilfe, LG, Microsoft, Mondelez, UPC,&nbsp;…  \n",
+		"2": "J'ai passé 4 années à l'[institut graphique d’enseignement théorique et pratique](http://www.graphische.net/) à Vienne pour apprendre comment gérer les infographies, et j'ai eu de la formation de dessin technique, peintures de cache, et des classes de peinture à l'huile à l'[Academy of Art University](https://www.academyart.edu/) à San Francisco. <br><br>",
+		"headline": "le designer",
+		"subheadline": "Dessinez, c'est gagné!",
 		"posters": {
-			"allianz": "Illustration for Allianz Assistance Car Insurance",
-			"dan": "Self-Portrait (Digitally Retouched Charcoal)",
-			"kenya": "Illustration Commission for an NGO",
-			"mill": "Charcoal on Paper",
-			"oil": "Oil on Canvas",
-			"sirenio": "Business Cards for Sirenio",
-			"spices": "Vector Graphics Poster (yes, those are all paths…)",
-			"svoboda": "Illustration for Furniture Store Svoboda",
-			"disturbia": "Pen on Paper"
+			"allianz": "Illustration pour Allianz Assistance insurance de voiture",
+			"dan": "Autoportrait (fusain retouché numériquement)",
+			"kenya": "Commande d'illustration pour une ONG",
+			"mill": "Fusain sur papier",
+			"oil": "Peinture à l'huile sur toile",
+			"sirenio": "Cartes Visites pour Sirenio",
+			"spices": "Poster de graphique vectoriel (ouai, ce sont tous des chemins…)",
+			"svoboda": "Illustration pour magasin de meubles Svoboda",
+			"disturbia": "Stylo sur papier"
 		},
 		"works": {
 			"creperie": "Time Card for 'la Creperie' Restaurant",
-			"summerToWinter": "Summer-to-Winter Conversion Matte Painting"
+			"summerToWinter": "Peintures de cache d'une conversion été à hiver"
 		}
 	},
 	"linguist": {
-		"0": "Sadly, we teach languages the same way we teach History or&nbsp;Math.  \nNew language students are quickly discouraged because it feels like **too much** commitment in **time and effort**. In addition, the course is not revolving around their interests and needs. There has to be a breaking change in _how_ we teach languages.",
-		"1": "I have dedicated a lot of my work life on UI/UX (user interface and user experience) and marketing, while spending my pastime on languages. I learned most of German, English, and French in school, but learned Indonesian, Spanish, a bit of Italian and Haitian Creole (and just started Russian and Swedish) using my own system. \nA lot of shortcomings of **language learning apps** can be counteracted with a lot of what I have learned in computer science, design, and marketing.  \n  \n<u>As such I have made it my mission to make learning of languages effective and fun!</u>",
-		"2": "Using my coding skills I started to create small games for rapid language learning that I will soon share – along with my whole approach – on a blog.",
-		"headline": "the Linguist",
-		"subheadline": "Learning languages has to be fun."
+		"0": "Tristement, on enseigne langues à la même façon qu'on enseigne l'histoire ou la&nbsp;mathématique.  \nNouveaux étudiants de langues sont découragé rapidement parce que ç'a trop l'air de **trop** d'engagement en terme de **temps et d'efforts**. En plus, les cours ne sont pas à propos de leur interêts et besoins. Il faut un changement de rupture dans notre façon d'enseigner les langues.",
+		"1": "J'ai consacré beaucoup de mon temps à IU/EU (l'interface et l'expérience utilisateur) et marketing, en même temps passant mon loisir avec les langues. J'ai apris le plus d'allemand, d'anglais, et du français en école, mais j'ai apris l'indonésien, l'espagnole, un peu d'italien et de créole haitien (et vient de commencer le Russe et le suédois) avec mon propre système. \nAssez des défauts **d'applications d'apprentissage de langues** peuvent être contrecarré avec ce que j'ai apris en informatique, graphisme, et marketing.  \n  \n<u>Alors je m'ai mis comme objectif de faire plaisant et effectif l'apprentissage de langues!</u>",
+		"2": "Utilisant mes compétences de programmation, j'ai commencé à créer des petites games pour apprentissage de langues rapide que je partagerai bientôt – en même temps que tout mon approche – sur un blog.",
+		"headline": "le linguiste",
+		"subheadline": "L'apprentissage des langues devrait se faire en s'amusant"
 	},
 	"animator": {
 		"0": "I have earned a BFA in Visual Effects from the Academy of Art University in SF, majoring in animation. Compositing and Matte Painting have always been a passion of mine, and I was able to put my knowledge to use working as compositor for VFX studios Dropout and [Studio 400A](https://www.linkedin.com/company-beta/2599944/).",
-		"headline": "Coming Soon",
-		"_headline": "the Animator",
+		"headline": "bientôt disponible",
+		"_headline": "l'animateur",
 		"subheadline": "work in progress",
 		"body": "animator.body"
 	},
 	"copywriter": {
-		"headline": "Coming Soon",
-		"_headline": "the Copywriter",
+		"headline": "bientôt disponible",
+		"_headline": "le Copywriter",
 		"subheadline": "I'm typing as fast as humanly possible",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"marketeer": {
-		"headline": "Coming Soon",
-		"_headline": "the Marketeer",
-		"subheadline": "Coming Soon",
+		"headline": "bientôt disponible",
+		"_headline": "le Marketeer",
+		"subheadline": "bientôt disponible",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"mathHat": {
-		"0": "I am currently working on an [animation engine for vector graphics](https://github.com/danborufka/danimator) with an according UI to animate paths on a segment point level. <br>",
-		"1": "When I wasn't freelancing as web designer and developer, I had the opportunity to familiarize with the inner workings of agencies ranging from small [one-man](http://www.i-kiu.at/) [shops](http://www.bindertrittenwein.com/) to [multinational](http://www.dentsuaegisnetwork.com/) [networks](http://www.isobar.com), and joining [a startup](https://angel.co/sirenio) as UI/UX lead.",
-		"2": "I ended up hiring developers for the teams I lead, consulting other businesses with their coding workflow, and teaching a semester of programming at the [SAE institute](http://www.sae.edu/aut/).",
-		"3": "While at <abbr title='Academy of Art University in San Francisco'>AAU</abbr>, I earned money on the side writing and selling small plugins for Illustrator, After Effects, and Nuke (using JavaScript and Python mostly).",
-		"4": "I originally started out as Flash programmer, doing small agency work and entering the realm of web design. I got my first job because the boss stumbled upon my first interactive animation: a dinosaur that would pee himself after having pushed his bladder often enough.",
-		"headline": "the Programmer",
-		"subheadline": "The world would be a better place if everyone would speak JavaScript.",
+		"0": "Je suis entrain d'écrire un [moteur d'animation de graphiques vectoriels](https://github.com/danborufka/danimator) avec interface opérateur pour animer des chemins vertex par vertex. <br>",
+		"1": "Quand je n'étais pas travailler en freelance comme concepteur et devéloppeur web, j'avais l'opportunité de me familiariser avec le fonctionnement d'agences variant d'[opérations](http://www.i-kiu.at/) [d'une personne](http://www.bindertrittenwein.com/) à [réseaux](http://www.isobar.com) [multinationaux](http://www.dentsuaegisnetwork.com/), à joindre [un start-up](https://angel.co/sirenio) comme responsable d'interface et d'expérience utilisateur.",
+		"2": "J'avais fini par engager des développeurs pour les équippes que je dirigeais, consultant autre entreprises avec leur flux de travail programmation, et enseignant un sémèstre de programmation à [l'institut SAE](http://www.sae.edu/aut/).",
+		"3": "Pedant mon temps à l'université <abbr title='Academy of Art University à San Francisco'>AAU</abbr>, je gagnait de l'argent en écrivant et vendant petites plug-ins pour Illustrator, After Effects, et Nuke (en JavaScript et Python pour la plupart).",
+		"4": "Initialiement, je commençais comme programmeur de Flash, recevant petit travail d'agences pub, et entrant le mode du design web. J'ai obtenu mon premier emploi car le chef tombait sur ma première animation interactive: 'La vessie de Nessie' – un dinosaure qui voudrait uriner lorsqu'on aurait appuyé sa vessie assez souvent.",
+		"headline": "le programmeur",
+		"subheadline": "Le monde serait une meilleur endroit si tout le monde parlerait JavaScript.",
 		"works": {
-			"danimator": "**Danimator.js** Animation Engine Interface built on top of PaperJS",
-			"delaunay": "Delaunay Triangulation Brush for Illustrator",
-			"sirenio": "Meteor-based Web App: communications platform Sirenio"
+			"danimator": "**Danimator.js** Interface opérateur du moteur d'animation se basant sur PaperJS",
+			"delaunay": "Brosse de triangulation 'Delaunay' pour Illustrator",
+			"sirenio": "Application web de base Meteor: tribune de communication nommée Sirenio"
 		}
 	},
 	"comingSoon": {
-		"headline": "Coming soon",
-		"subheadline": "What's next?",
+		"headline": "bientôt disponible",
+		"subheadline": "Qu'est-ce que suit?",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"partyHat": {
-		"0": "I'm open to any kind of collaboration and happy to listen to your input!  \nFeel free to drop me a line!",
-		"headline": "the Party Hat",
-		"subheadline": "Let's ~~party~~ work together!"
+		"0": "Je suis ouvert à toute sorte de collaboration et heureux d'écouter vôtre apport!  \nN'hésitez pas de me lancer un message!",
+		"headline": "le chapeau de fête",
+		"subheadline": "Allons faire ~~la fête~~ du travail ensemble!"
 	}
 }

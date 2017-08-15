@@ -59,7 +59,7 @@ let data = {
 i18n.configure({
 	defaultLocale: 	data.language,
     directory: 		__dirname + '/locales',
-    locales: 		['en-US', 'de-DE'],
+    locales: 		['en-US', 'de-DE', 'fr-FR'],
 	objectNotation: true,
 	register: data
 });
@@ -200,7 +200,7 @@ app.get('/hats/:hat', (req, res) => {
 		uri: 		'hat.html',
 		scripts: 	[],
 		styles: 	['css/pages.css'],
-		title: 		`Dan Borufka, ${title}`,
+		title: 		`Dan Borufka, ${title}`
 	});
 
 	data.__ = req.__;
@@ -210,7 +210,7 @@ app.get('/hats/:hat', (req, res) => {
 	const nextHat = _pages.indexOf(hat);
 
 	if(nextHat > -1) {
-		data.nextHat = _.startCase(_pages[nextHat + 1]);
+		data.nextHat = _pages[nextHat + 1];
 	} else {
 		data.nextHat = false;
 	}
