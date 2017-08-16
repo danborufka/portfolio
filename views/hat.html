@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col header">
-		<a class="heading" href="/" title="<%= __('home.back') %>"><h1 class="translatable" data-translation-key="<%= hat %>.headline" data-translation-transformer="_.startCase"><%= _.startCase(__(hat + '.headline')) %></h1></a>
+		<a class="heading" href="/" title="<%= __('home.back') %>"><h1 class="translatable" data-translation-key="<%= hat %>.headline" data-translation-transformer="_.utf8startCase"><%= _.utf8startCase(__(hat + '.headline')) %></h1></a>
 	<% if(nextHat) { %>
 		<a class="next" href="/hats/<%= nextHat %>"><span class="translatable" data-translation-key="general.next"><%= __('general.next') %></span>: <span class="translatable" data-translation-key="<%= nextHat %>.headline"><%= __(nextHat + '.headline') %></span></a>
 	<% } %>

@@ -1,0 +1,124 @@
+{
+	"general": {
+		"next": "más"
+	},
+	"home": {
+		"back": "página principal",
+		"pipeline": "Sobreviví toda la tubería de la industria publicitaria …",
+		"jobs": "… en posiciones como ilustrador, redactor, desarrollador de concepto, jefe de proyecto, diseñador web, programador alto (full-stack), jefe de tecnología, y consultor&nbsp;técnico.",
+		"hats": "En 16 años podría llevar varios sombreros:",
+		"polygoat": {
+			"question": "¿Vale, que es un Polygoat?",
+			"answer": "Un **políglota** es una persona que habla varios idiomas.  \nUn **Polygoat** es es una cabra que habla varios idiomas - incluyendo JavaScript."
+		}
+	},
+	"contact": {
+		"cta": "¡Ponte en contacto conmigo!",
+		"name": "Su nombre",
+		"email": "Su dirección de correo electrónico",
+		"message": "Su mensayo",
+		"error": "Por favor, ¡introduce aquí %s!",
+		"send": "Enviar",
+		"sent": "Mensayo enviado.",
+		"body": "Estaremos en contacto pronto. Mientras tanto, saltamos de nuevo a la página principal …",
+		"thanks": "¡Gracias!"
+	},
+	"subscribe": {
+		"headline": "Únase a nosotros boletín para recibir un correo electrónico cuando el blog está en línea!",
+		"cta": "Suscríbeme, Scotty!",
+		"email": "Dirección de correo electrónico",
+		"firstName": "Primer nombre",
+		"lastName": "Apellido",
+		"required": "obligatorio",
+		"errors": {
+			"required": "Este es un campo obligatorio.",
+			"maxlength": "Introduce un máximo de {0} caracteres.",
+			"minlength": "Introduce a menos {0} caracteres",
+			"rangelength": "Introduce a menos {0} y un máximo de {1} caracteres.",
+			"email": "Introduce una dirrección de correo electrónico válida.",
+			"url": "Introduce un URL correcto.",
+			"date": "Introduce una fecha válida.",
+			"number": "Introduce un número.",
+			"digits": "Introduce sólo dígitos.",
+			"equalTo": "Introduce la misma cifra.",
+			"range": "Introduce una cifra entre {0} y {1}.",
+			"max": "Introduce una cifra inferior o igual a {0}.",
+			"min": "Introduce una cifra superior o igual a {0}.",
+			"creditcard": "Introduce un numéro de taryota de crédito válido."
+		}
+	},
+	"lightbox": {
+		"label": "Imagen %1 de %2"
+	},
+	"designer": {
+		"0": "No he querido diseño, pero _lo_ _me_ siempre ha perseguido.  \nOriginalmente, yo era un diseñador gráfico y mis cargos comprendidas ilustraciones, diseño de web y de imprenta, pinturas mate, proyecciones de luz, y mucho más.  \n",
+		"1": "Durante mi trabajo en – y para – agencias publicitarias como [isobar](http://www.isobar.com/at/en/work/), he tenido la oportunidad de trabajar con marcas como Bahlsen, Disney, Danone, Lebenshilfe, LG, Microsoft, Mondelez, UPC,&nbsp;…  \n",
+		"2": "He pasado 4 años al [Instituto de Enseñanza y Planta de Pruebas Graficas](http://www.graphische.net/) en Viena para apprender como gestionar las infografía, y he tenido clases de dibujo técnico, pinturas mate, y de pintura óleo al [Academy of Art University](https://www.academyart.edu/) en San Francisco. <br><br>",
+		"headline": "el diseñador",
+		"subheadline": "…",
+		"posters": {
+			"allianz": "Ilustracíon para el seguro de coche Allianz Assistance",
+			"dan": "Autorretrato (carbón retocado digitalmente)",
+			"kenya": "Trabajo de ilustracíon para una ONG",
+			"mill": "Carbón sobre papel",
+			"oil": "Óleo sobre lienzo",
+			"sirenio": "Tarjetas para Sirenio",
+			"spices": "Poster de ilustración vectorial (sí, estos son todos trazados vectoriales…)",
+			"svoboda": "Ilustración para la tienda de muebles Svoboda",
+			"disturbia": "Boli sobre papel"
+		},
+		"works": {
+			"creperie": "Tarjeta de tiempo para el restaurante 'La Crepería'",
+			"summerToWinter": "Pintura mate de una conversión verano-a-invierno"
+		}
+	},
+	"linguist": {
+		"0": "Tristamente, enseñamos idiomas simplemente como la historia o las&nbsp;matemáticas.  \nLos nuevos estudiantes se desaniman rápidamente porque se siente necesitar un gran sacrificio de **demasiado trabaj y tiempo**. Por otra parte, el curso es rara vez acerda de sus intereses y necesidades. Tenemos que repensar por completo _como_ enseñamos idiomas.",
+		"1": "He dedicado la mayor parte de mi tiempo a UI/UX (??) y marketing, mientras que mi tiempo libre tenía que servir para las lenguas. He aprendido el plus de german, ingles, y français en école, mais j'ai apris l'indonésien, español, un peu italien y de créole haitien (et vient de comoncer el Russe y el suédois) avec mon propre système. \nAssez des défauts **d'applications d'apprentissage de langues** peuvent être contrecarré con lo que he aprendido en informatica, graphisme, y marketing.  \n  \n<u>Alors yo m'ai mis como obyoctif de faire plaisant y effectif l'apprentissage de langues!</u>",
+		"2": "Utilisando mis compétences de programacíon, empecé a construir pequeños jugos para el aprendizaje de idiomas rapide que publiqué con mi ?? en un blog pronto.",
+		"headline": "el lingüista",
+		"subheadline": "L'aprendizaje de idiomas debe ser divertido??"
+	},
+	"animator": {
+		"0": "…",
+		"headline": "el animador",
+		"subheadline": "work in progress",
+		"body": "animator.body"
+	},
+	"copywriter": {
+		"headline": "próximamente",
+		"_headline": "le Copywriter",
+		"subheadline": "I'm typing as fast as humanly possible",
+		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
+	},
+	"marketeer": {
+		"headline": "próximamente",
+		"_headline": "le Marketeer",
+		"subheadline": "próximamente",
+		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
+	},
+	"mathHat": {
+		"0": "yo soy entrain d'écrire un [moteur d'animation de graphiques vectoriels](https://github.com/danborufka/danimator) avec interface opérateur para animer des chemins vertex par vertex. <br>",
+		"1": "Quand yo n'étais pas trabajo ler en freelance como concepteur y devéloppeur web, j'avais l'opportunité de me familiariser avec el fonctionnement d'agences variant d'[opérations](http://www.i-kiu.at/) [d'una personne](http://www.bindertrittenwein.com/) à [réseaux](http://www.isobar.com) [multinationaux](http://www.dentsuaegisnetwork.com/), à joindre [un start-up](https://angel.co/sirenio) como responsable d'interface y d'expérience utilisateur.",
+		"2": "J'avais fini par engager des développeurs para les équippes que yo dirigeais, consultant autre entreprises avec leur flux de trabajo  programmation, y enseignant un sémèstre de programmation à [l'institut SAE](http://www.sae.edu/aut/).",
+		"3": "Pedant mon temps à l'université <abbr title='Academy of Art University à San Francisco'>AAU</abbr>, yo gagnait de l'argent en écrivant y vendant petites plug-ins para Illustrator, After Effects, y Nuke (en JavaScript y Python para la plupart).",
+		"4": "Initialiement, yo comonçais como programmeur de Flash, recevant petit trabajo  d'agences pub, y entrant el mode du design web. J'ai obtenu mon premier emploi car el jefe tombait sur ma première animation interactive: 'La vessie de Nessie' – un dinosaure qui voudrait uriner lorsqu'on aurait appuyé sa vessie assez souvent.",
+		"headline": "el programador",
+		"subheadline": "Le monde serait una meilleur endroit si tout el monde parlerait JavaScript.",
+		"works": {
+			"danimator": "**Danimator.js** Interface opérateur du moteur d'animation se basant sur PaperJS",
+			"delaunay": "Brosse de triangulation 'Delaunay' para Illustrator",
+			"sirenio": "Application web de base Meteor: tribuna de communication nommée Sirenio"
+		}
+	},
+	"comingSoon": {
+		"headline": "próximamente",
+		"subheadline": "¿Ahora qué?",
+		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
+	},
+	"partyHat": {
+		"0": "¡Estoy abierto a cualquier tipo de cooperación y contento de escuchar vuestra aportación!  \n¡Escríbeme dos líneas!!",
+		"headline": "el juerguista",
+		"subheadline": "¡Vamos a ~~celebrar~~ trabajar juntos!"
+	}
+}
