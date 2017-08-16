@@ -55,9 +55,10 @@
 	      </div>
 	      <div class="modal-body">
 	        <ul class="select languages">
-	        	<li class="<%= language === 'en-US' ? 'selected' : '' %>" data-value="en-US"><a href="#en-US">English (United States)</a></li>
-	        	<li class="<%= language === 'de-DE' ? 'selected' : '' %>" data-value="de-DE"><a href="#de-DE">Deutsch (Deutschland)</a></li>
-	        	<li class="<%= language === 'fr-FR' ? 'selected' : '' %>" data-value="fr-FR"><a href="#fr-FR">Français (Françe)</a></li>
+	        <% _.each(languages, (label, code) => { %>
+	        	<li class="<%= language === code ? 'selected' : '' %>" data-value="<%= code %>"><a href="#<%= code %>"><%= label %></a></li>
+	        <% }); %>
+	        	<li class="<%= language === 'es-ES' ? 'selected' : '' %>" data-value="es-ES"><a href="#es-ES">Spanish (Spain)</a></li>
 	        </ul>
 	      </div>
 	      <div class="modal-footer">

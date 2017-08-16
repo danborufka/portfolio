@@ -20,6 +20,11 @@ const _letters = {
 	a: 'animator', 
 	c: 'copywriter'
 };
+const _languages = {
+	'en-US':'English (United States)', 
+	'de-DE':'Deutsch (Deutschland)', 
+	'fr-FR':'Français (Françe)'
+};
 
 const _pages = ['designer', 'linguist', 'mathHat','partyHat', 'designer'];
 
@@ -32,6 +37,7 @@ let data = {
 	base: 		 '',
 	getting: 	 '',
 	language: 	 'en-US',
+	languages: 	 _languages,
 
 	include: 	 file => _.template(fs.readFileSync(app.get('views') + '/' + file, 'utf8'))(data),
 	getLanguage: () => data.language.split('-').join(' (').toUpperCase() + ')',
@@ -55,11 +61,13 @@ let data = {
 				 }
 };
 
+_.utf8startCase = str => _.map((str).split(" "), _.upperFirst).join(" ");
+
 // config translation engine
 i18n.configure({
 	defaultLocale: 	data.language,
     directory: 		__dirname + '/locales',
-    locales: 		['en-US', 'de-DE', 'fr-FR'],
+    locales: 		Object.keys(_languages),
 	objectNotation: true,
 	register: data
 });
@@ -104,7 +112,7 @@ app.use(function switchLanguageMW(req, res, next) {
 app.get('/', (req, res) => {
 	data.page.uri = 'home.html';
 	data.page.styles = ['css/home.css'];
-	data.page.scripts = ['js/home.js'];
+	data.page.scripts = ['js/libs/Danimator.min.js', 'js/home.js'];
 
 	data.__ = req.__;
 	data.marked = _createMarked(req);

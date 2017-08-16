@@ -4,7 +4,9 @@
 			</div>
 			<div class="logo">
 				<h1>Hi. <span class="sm">I'm</span> Dan.</h1>
-				<a href="mailto:dan@polygoat.org" target="_blank"><img src="img/dan.png" width="100%"></a>
+				<a href="mailto:dan@polygoat.org" target="_blank">
+					<canvas id="goat" width="387" height="441"></canvas>
+				</a>
 				<h2><span class="sm">The</span> P<span class="invisible">o</span>lygoat</h2>
 			</div>
 			<div class="vspacer vr"></div>
@@ -70,4 +72,42 @@
 				</p>
 			</div>
 		</div>
-		<script src="js/libs/howler.core.min.js"></script>
+		<style type="text/css">
+			#goat.ready {	width: 200px;	}
+		</style>
+		<script type="text/paperscript" canvas="goat">
+			Danimator.import('img/goathead.svg', {
+							expandShapes: 	true,
+							onLoad: 		function() {
+												var $goat 	= $('#goat').addClass('ready');
+												var self 	= this;
+												var lid 	= self.eye.lid.item;
+												var mask 	= self.find('clip-path')[0].item;
+												var pupil 	= self.eye.look.find('pupil')[0].item;
+
+												lid.state = 'open';
+
+												setInterval(function() {
+													lid.state = 'closed';
+													setTimeout(function() {
+														lid.state = 'open';
+													}, 300);
+												}, 3000);
+
+												console.log('bound', view.viewSize, $goat.width(), $goat.offset().left, pupil.position.x);
+
+												$(document).on('mousemove', function(event) {
+													var pos = new Point( 	event.pageX - $goat.offset().left + 88, 
+																			event.pageY - $goat.offset().top  + 74   //* 200/387
+																		);
+
+													if(self.eye.item.hitTest(pos)) {
+														pupil.position = pos;
+													} else {
+														pupil.position = self.eye.moPath.item.getNearestLocation( pos ).point;
+													}
+												});
+												console.log('pupil', pupil);
+											}
+			});
+		</script>
