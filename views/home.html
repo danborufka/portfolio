@@ -91,11 +91,9 @@
 													}, 300);
 												}, 3000);
 
-												console.log('bound', view.viewSize, $goat.width(), $goat.offset().left, pupil.position.x);
-
 												$(document).on('mousemove', function(event) {
 													var pos = new Point( 	event.pageX - $goat.offset().left + 88, 
-																			event.pageY - $goat.offset().top  + 74   //* 200/387
+																			event.pageY - $goat.offset().top  + 74
 																		);
 
 													if(self.eye.item.hitTest(pos)) {
@@ -104,7 +102,6 @@
 														pupil.position = self.eye.moPath.item.getNearestLocation( pos ).point;
 													}
 												});
-												console.log('pupil', pupil);
 											}
 			});
 		</script>
