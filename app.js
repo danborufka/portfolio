@@ -112,7 +112,7 @@ app.use(function switchLanguageMW(req, res, next) {
 app.get('/', (req, res) => {
 	data.page.uri = 'home.html';
 	data.page.styles = ['css/home.css'];
-	data.page.scripts = ['js/libs/Danimator.min.js', 'js/home.js'];
+	data.page.scripts = ['js/libs/Danimator.min.js']; //, 'js/home.js'];
 
 	data.__ = req.__;
 	data.marked = _createMarked(req);
