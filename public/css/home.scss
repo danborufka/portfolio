@@ -23,11 +23,13 @@ p                       {
 							padding-left: 		6px;
 	}
 
+	canvas,
 	img 				{
 							transition: 		.2s ease all;
 	}
 
 	&:hover 			{
+		canvas,
 		img 			{
 							transform: 			scale(1.04);
 		}
