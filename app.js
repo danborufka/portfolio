@@ -216,6 +216,7 @@ app.get('/hats/:hat', (req, res) => {
 	data.__ = req.__;
 	data.marked = _createMarked(req);
 	data.hat = hat;
+	data.isLocal = req.headers.host === 'localhost:3000';
 
 	const nextHat = _pages.indexOf(hat);
 
