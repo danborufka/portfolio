@@ -35,8 +35,12 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffd89b">
 
-	<!-- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<%	if(isLocal) { %>
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css">
+<% } else { %>
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<% } %>
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <% 	if(page.styles.length) { 
 		_.each(page.styles, style => { %>	<link rel="stylesheet" type="text/css" href="<%= style %>">

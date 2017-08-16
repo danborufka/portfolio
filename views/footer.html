@@ -4,10 +4,13 @@
 		</div>	
 	</div>
 	
-	<!-- <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
-	<!-- <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<%	if(isLocal) { %>
 	<script src="js/libs/jquery-1.11.3.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
+<% } else { %>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<% } %>
 	<script src="js/libs/cookie.min.js"></script>
 	<script src="js/libs/lightbox.min.js"></script>
 	<script src="//use.fontawesome.com/a792f85b55.js"></script>
