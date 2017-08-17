@@ -62,9 +62,6 @@
 	        <% _.each(languages, (label, code) => { %>
 	        	<li class="<%= language === code ? 'selected' : '' %>" data-value="<%= code %>"><a href="#<%= code %>"><%= label %></a></li>
 	        <% }); %>
-	        <%	if(isLocal) { %>
-	        	<li class="<%= language === 'es-ES' ? 'selected' : '' %>" data-value="es-ES"><a href="#es-ES">Spanish (Spain)</a></li>
-	        <% } %>
 	        </ul>
 	      </div>
 	      <div class="modal-footer">

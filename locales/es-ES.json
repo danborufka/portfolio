@@ -24,7 +24,7 @@
 		"thanks": "¡Gracias!"
 	},
 	"subscribe": {
-		"headline": "Únase a nosotros boletín para recibir un correo electrónico cuando el blog está en línea!",
+		"headline": "Unase a nosotros boletín para recibir un correo electrónico cuando el blog está en línea!",
 		"cta": "Suscríbeme, Scotty!",
 		"email": "Dirección de correo electrónico",
 		"firstName": "Primer nombre",
@@ -45,21 +45,21 @@
 			"max": "Introduce una cifra inferior o igual a {0}.",
 			"min": "Introduce una cifra superior o igual a {0}.",
 			"creditcard": "Introduce un numéro de taryota de crédito válido."
-		}
+		}	
 	},
 	"lightbox": {
 		"label": "Imagen %1 de %2"
 	},
 	"designer": {
-		"0": "No he querido diseño, pero _lo_ _me_ siempre ha perseguido.  \nOriginalmente, yo era un diseñador gráfico y mis cargos comprendidas ilustraciones, diseño de web y de imprenta, pinturas mate, proyecciones de luz, y mucho más.  \n",
+		"0": "No he querido diseño, pero siempre _lo_ _me_ ha perseguido.  \nOriginalmente, yo era un diseñador gráfico y mis cargos comprendidas ilustraciones, diseño de web y de imprenta, pinturas mate, proyecciones de luz, y mucho más.  \n",
 		"1": "Durante mi trabajo en – y para – agencias publicitarias como [isobar](http://www.isobar.com/at/en/work/), he tenido la oportunidad de trabajar con marcas como Bahlsen, Disney, Danone, Lebenshilfe, LG, Microsoft, Mondelez, UPC,&nbsp;…  \n",
-		"2": "He pasado 4 años al [Instituto de Enseñanza y Planta de Pruebas Graficas](http://www.graphische.net/) en Viena para apprender como gestionar las infografía, y he tenido clases de dibujo técnico, pinturas mate, y de pintura óleo al [Academy of Art University](https://www.academyart.edu/) en San Francisco. <br><br>",
+		"2": "He pasado 4 años al [Instituto de Enseñanza y Planta de Pruebas Graficas](http://www.graphische.net/) en Viena para aprender como gestionar las infografías, y he tenido clases de dibujo técnico, pinturas mates, y de pintura al óleo a la [Academy of Art University](https://www.academyart.edu/) en San Francisco. <br><br>",
 		"headline": "el diseñador",
-		"subheadline": "…",
+		"subheadline": "No por diseño …",
 		"posters": {
-			"allianz": "Ilustracíon para el seguro de coche Allianz Assistance",
+			"allianz": "Ilustración para el seguro de automóviles Allianz Assistance",
 			"dan": "Autorretrato (carbón retocado digitalmente)",
-			"kenya": "Trabajo de ilustracíon para una ONG",
+			"kenya": "Trabajo de ilustración para una ONG",
 			"mill": "Carbón sobre papel",
 			"oil": "Óleo sobre lienzo",
 			"sirenio": "Tarjetas para Sirenio",
@@ -75,40 +75,40 @@
 	"linguist": {
 		"0": "Desgraciadamente enseñamos idiomas exactamente como la historia o las mate&shy;máticas.  \nLos nuevos estudiantes se desaniman rápidamente porque se siente necesitar un gran sacrificio de **demasiado trabajo y tiempo**. Por otra parte, el curso es rara vez acerca de sus intereses y necesidades. Tenemos que repensar por completo _como_ enseñamos idiomas.",
 		"1": "He dedicado la mayor parte de mi tiempo al diseño de intefases y experiencia de usuario (UI/UX) y marketing, mientras que mi tiempo libre tenía que servir para las lenguas. Aprendí la mayoría de alemán, inglés y francés en la escuela, pero aprendí indonesio, español, un poco de italiano y de criollo haitiano (y sólo comenzó ruso y sueco) utilizando mi propio sistema.  \n  \nMuchas deficiencias de las aplicaciones de **enseñanza de idiomas** se pueden contrarrestar con un montón de lo que he aprendido en informática, diseño y marketing.  \n  \n<u>Entonces he elegido la misión de asegurar que el aprendizaje de idiomas es eficaz y entretenido!</u>",
-		"2": "Utilisando mis compétences de programacíon, empecé a construir pequeños jugos para el aprendizaje de idiomas rapide que publiqué con mi ?? en un blog pronto.",
+		"2": "Utilisando mis competencias de programación, empecé a construir pequeños jugos para el aprendizaje de idiomas rapide que publiqué con mi enfoque en un blog pronto.",
 		"headline": "el lingüista",
-		"subheadline": "L'aprendizaje de idiomas debe ser divertido!"
+		"subheadline": "El aprendizaje de idiomas debe ser divertido!"
 	},
 	"animator": {
 		"0": "…",
 		"headline": "el animador",
 		"subheadline": "work in progress",
-		"body": "animator.body"
+		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"copywriter": {
 		"headline": "próximamente",
-		"_headline": "le Copywriter",
+		"_headline": "el redactor",
 		"subheadline": "I'm typing as fast as humanly possible",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"marketeer": {
 		"headline": "próximamente",
-		"_headline": "le Marketeer",
+		"_headline": "el reclutador",
 		"subheadline": "próximamente",
 		"body": "I'm still working on this one, so please hang tight until I've finished this portfolio ;)"
 	},
 	"mathHat": {
-		"0": "yo soy entrain d'écrire un [moteur d'animation de graphiques vectoriels](https://github.com/danborufka/danimator) avec interface opérateur para animer des chemins vertex par vertex. <br>",
-		"1": "Quand yo n'étais pas trabajo ler en freelance como concepteur y devéloppeur web, j'avais l'opportunité de me familiariser avec el fonctionnement d'agences variant d'[opérations](http://www.i-kiu.at/) [d'una personne](http://www.bindertrittenwein.com/) à [réseaux](http://www.isobar.com) [multinationaux](http://www.dentsuaegisnetwork.com/), à joindre [un start-up](https://angel.co/sirenio) como responsable d'interface y d'expérience utilisateur.",
-		"2": "J'avais fini par engager des développeurs para les équippes que yo dirigeais, consultant autre entreprises avec leur flux de trabajo  programmation, y enseignant un sémèstre de programmation à [l'institut SAE](http://www.sae.edu/aut/).",
-		"3": "Pedant mon temps à l'université <abbr title='Academy of Art University à San Francisco'>AAU</abbr>, yo gagnait de l'argent en écrivant y vendant petites plug-ins para Illustrator, After Effects, y Nuke (en JavaScript y Python para la plupart).",
-		"4": "Initialiement, yo comonçais como programmeur de Flash, recevant petit trabajo  d'agences pub, y entrant el mode du design web. J'ai obtenu mon premier emploi car el jefe tombait sur ma première animation interactive: 'La vessie de Nessie' – un dinosaure qui voudrait uriner lorsqu'on aurait appuyé sa vessie assez souvent.",
+		"0": "Actualmente estoy trabajando en un [motor de animación de gráficos vectoriales] (https://github.com/danborufka/danimator) con una interfaz para animar los segmentos individuales.<br>",
+		"1": "Si yo no estaba trabajando como diseñador independiente de la tela y el desarrollador web, he estaba capaz de mirar bajo el capó de varias agencias - [diversos] (http://www.bindertrittenwein.com) [pequeños](http: //www.i-kiu.at/) tambien que [redes](http://www.isobar.com) [multinacionales](http://www.dentsuaegisnetwork.com/) -, y finalmente entraba en [un compañia startup](https://angel.co/sirenio) como 'Master of UI/UX'.",
+		"2": "Al final, he reclutado programadores para el equipo de programadores que fue capaz de dirigir, asesorar a otras empresas con su flujo de trabajo de desarrollo web, y daba una clase de programación al instituto [SAE](http://www.sae.edu/aut/).",
+		"3": "Durante mi tiempo en la <abbr title='Academy of Art University en San Francisco'>AAU</abbr>, he hecho un ingreso adicional gracias a plugins (escritos para mí) para Illustrator, After Effects y Nuke (JavaScript y Python, principalmente).",
+		"4": "Originalmente programador Flash, recibía pequeños pedidos de agencias publicitarias, y entraba la industria de desarrollo web. Tenía mi primer trabajo porque el jefe se encontró mi primera animación interactiva: un dinosaurio orinando cuando a menudo han presionado sobre la vejiga.",
 		"headline": "el programador",
-		"subheadline": "Le monde serait una meilleur endroit si tout el monde parlerait JavaScript.",
+		"subheadline": "El mundo sería mejor si todos hablarían JavaScript.",
 		"works": {
-			"danimator": "**Danimator.js** Interface opérateur du moteur d'animation se basant sur PaperJS",
-			"delaunay": "Brosse de triangulation 'Delaunay' para Illustrator",
-			"sirenio": "Application web de base Meteor: tribuna de communication nommée Sirenio"
+			"danimator": "**Danimator.js** Interfaz del usario de mi motor de animación basado en PaperJS",
+			"delaunay": "Pincel de triangulación 'Delaunay' para Illustrator",
+			"sirenio": "Aplicación web basada en Meteor: plataforma de comunicación 'Sirenio'"
 		}
 	},
 	"comingSoon": {

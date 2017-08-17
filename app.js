@@ -23,7 +23,8 @@ const _letters = {
 const _languages = {
 	'en-US':'English (United States)', 
 	'de-DE':'Deutsch (Deutschland)', 
-	'fr-FR':'Français (Françe)'
+	'fr-FR':'Français (Françe)',
+	'es-ES':'Español (Espania)'
 };
 
 const _pages = ['designer', 'linguist', 'mathHat','partyHat', 'designer'];
