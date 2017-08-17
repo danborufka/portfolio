@@ -64,6 +64,7 @@ jQuery(function($){
 	  				$(this).html(data.values[index]);
 	  			}
 	  		});
+	  		$('#lightbox,#lightboxOverlay').remove();
 	  		lightbox.init();
 	  	});
 	  }
