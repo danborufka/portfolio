@@ -8,24 +8,33 @@ jQuery(function($){
 
 	var _resizeLastDelta = 1000;
 	var _resizeLastTime = 0;
+	var _resizeLastWidth = $win.width();
 	var _resizeTimeout;
 
 	var language = Cookies.get('polygoat-portfolio-language') || 'en-US';
 
   	_automated = false;
 
+  	console.log('_resizeLastWidth', _resizeLastWidth);
+
 	$win.on('resize', function() {
 	    if(!_automated) {
 	  		var now = + new Date;
 	    	var _oldDelta = _resizeLastDelta + 0;
-	    	
+	    	var _oldWidth = _resizeLastWidth + 0;
+
 	    	_resizeLastDelta = now - _resizeLastTime;
 	    	_resizeLastTime = + new Date();
+	    	_resizeLastWidth = $win.width();
 
-	    	if(_oldDelta < 1000)
-	    		if(_resizeLastDelta < 1000) {
-	  				$body.addClass('resizing');
-	    		}
+	    	console.log('_oldWidth', _oldWidth);
+	    	console.log('_resizeLastWidth', _resizeLastWidth);
+
+	    	if(_oldWidth != _resizeLastWidth)
+		    	if(_oldDelta < 1000)
+		    		if(_resizeLastDelta < 1000) {
+		  				$body.addClass('resizing');
+		    		}
 	    		
 	    	clearTimeout(_resizeTimeout);
 	    	_resizeTimeout = setTimeout(function() {
