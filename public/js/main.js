@@ -15,8 +15,6 @@ jQuery(function($){
 
   	_automated = false;
 
-  	console.log('_resizeLastWidth', _resizeLastWidth);
-
 	$win.on('resize', function() {
 	    if(!_automated) {
 	  		var now = + new Date;
@@ -101,17 +99,18 @@ jQuery(function($){
 		});
 
 	var _afterBeforeTimeout = -1;
-	var _afterBeforeX = 0;
 
 	$('.after-before')
 		.each(function() {
 			var $this = $(this);
-			_afterBeforeX = ($this.width()/2);
+			var _afterBeforeX = ($this.width()/2);
+			$this.data('_afterBeforeX', _afterBeforeX);
 			$this.find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
 		})
 		.on('mousemove', function(event){
 			clearTimeout(_afterBeforeTimeout);
-			_afterBeforeX = event.offsetX;
+			var _afterBeforeX = event.offsetX;
+			$this.data('_afterBeforeX', _afterBeforeX);
 			$(this).find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
 		})
 		.on('mouseenter', function(event) {
@@ -121,7 +120,7 @@ jQuery(function($){
 		})
 		.on('mouseout', function(event) {
 			var $this = $(this);
-			var $img = $this.find('img:first').stop().css('fontSize', _afterBeforeX);
+			var $img = $this.find('img:first').stop().css('fontSize', $this.data('_afterBeforeX'));
 
 			_afterBeforeTimeout = setTimeout(function() {
 				$img.animate({ fontSize: $this.width()/2 }, { step: function(now) {
