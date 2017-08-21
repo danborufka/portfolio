@@ -1,63 +1,11 @@
-<link rel="stylesheet" type="text/css" href="css/hats/designer.css">
-<p class="translatable" data-translation-key="<%= __next('designer') %>" data-translation-transformer="marked">
-	<%= marked(__current('designer')) %>
+<p class="translatable" data-translation-key="<%= __next('animator') %>" data-translation-transformer="marked">
+	<%= marked(__current('animator')) %>
 </p>
-<p>
-	<div class="poster-container">
-		<a href="img/posters/full/allianz-autoversicherung.jpg" class="translatable" data-lightbox="design" id="poster_allianz" data-title="<%= __('designer.posters.allianz') %>" data-translation-key="designer.posters.allianz" data-translation-transformer="destination.attr.data-title">
-			<img src="img/posters/allianz-autoversicherung.png"> 		 
-		</a>
-		<a href="img/posters/full/svoboda.jpg" data-lightbox="design" class="floating translatable" id="poster_svoboda" data-title="<%= __('designer.posters.svoboda') %>" data-translation-key="designer.posters.svoboda" data-translation-transformer="destination.attr.data-title">
-			<img src="img/posters/svoboda.png">
-		</a>
-		<a href="img/posters/full/spices_poster-creativity.jpg" data-lightbox="design" class="floating" id="poster_spices" data-title="<%= __('designer.posters.spices') %>" data-translation-key="designer.posters.spices" data-translation-transformer="destination.attr.data-title">
-			<img src="img/posters/spices_poster-creativity.png">
-		</a>
-		<a href="img/posters/full/painting-massive-cock.jpg" data-lightbox="design" class="floating" id="poster_oil1" data-title="<%= __('designer.posters.oil') %>" data-translation-key="designer.posters.oil" data-translation-transformer="destination.attr.data-title"> 				
-			<img src="img/posters/painting-massive-cock.png">			 
-		</a>
-		<a href="img/posters/full/oil-sf.jpg"  data-lightbox="design" class="floating" id="poster_oil2" data-title="<%= __('designer.posters.oil') %>" data-translation-key="designer.posters.oil" data-translation-transformer="destination.attr.data-title"> 					
-			<img src="img/posters/oil-sf.png">			 
-		</a>
-		<a href="img/posters/full/charcoal-mill.jpg" data-lightbox="design" class="floating" id="poster_mill" data-title="<%= __('designer.posters.mill') %>" data-translation-key="designer.posters.mill" data-translation-transformer="destination.attr.data-title"> 		
-			<img src="img/posters/charcoal-mill.png">		 
-		</a>
-		<a href="img/posters/full/drawing-disturbia.jpg"  data-lightbox="design" class="floating" id="poster_disturbia" data-title="<%= __('designer.posters.disturbia') %>" data-translation-key="designer.posters.disturbia" data-translation-transformer="destination.attr.data-title"> 		
-			<img src="img/posters/drawing-disturbia.png">	 	
-		</a>
-		<a href="img/posters/full/drawing-kenya.jpg" data-lightbox="design" class="floating" id="poster_kenya" data-title="<%= __('designer.posters.kenya') %>" data-translation-key="designer.posters.kenya" data-translation-transformer="destination.attr.data-title"> 			
-			<img src="img/posters/drawing-kenya.png">	 
-		</a>
-		<a href="img/posters/full/dan.jpg"  data-lightbox="design" class="floating" id="poster_dan" data-title="<%= __('designer.posters.dan') %>" data-translation-key="designer.posters.dan" data-translation-transformer="destination.attr.data-title"> 					
-			<img src="img/posters/dan.png">				 
-		</a>
+<div class="inner-container">
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe width="854" height="480" src="//www.youtube.com/embed/U9OVmaEBiic?modestbranding=1&rel=0&color=%23ffd98f" frameborder="0" allowfullscreen></iframe>
 	</div>
+</div>
+<p class="translatable" data-translation-key="<%= __next('animator') %>" data-translation-transformer="marked">
+	<%= marked(__current('animator')) %> 
 </p>
-<p class="translatable" data-translation-key="<%= __next('designer') %>" data-translation-transformer="marked">
-	<%= marked(__current('designer')) %> 
-</p>
-<p></p>
-<p class="translatable" data-translation-key="<%= __next('designer') %>" data-translation-transformer="marked">
-	<%= marked(__current('designer')) %> 
-</p>
-<p>
-	<a class="after-before">
-		<img class="img-responsive" src="img/works/summerToWinter_before.jpg">
-		<img class="img-responsive" src="img/works/summerToWinter_after.jpg">
-	</a>
-	<figcaption class="translatable" data-translation-key="designer.works.summerToWinter"><%= __('designer.works.summerToWinter') %></figcaption>
-</p>
-<script>
-	setTimeout(function() {
-		jQuery(function($) {
-			var $container = $('.poster-container');
-			$container
-				.on('mouseover', 'a', function() {
-					$container.addClass('hover');
-				})
-				.on('mouseout', 'a', function() {
-					$container.removeClass('hover');
-				});
-		});
-	}, 0);
-</script>
