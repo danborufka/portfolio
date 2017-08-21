@@ -80,11 +80,10 @@
 		"subheadline": "L'apprentissage des langues devrait se faire en s'amusant"
 	},
 	"animator": {
-		"0": "I have earned a BFA in Visual Effects from the Academy of Art University in SF, majoring in animation. Compositing and Matte Painting have always been a passion of mine, and I was able to put my knowledge to use working as compositor for VFX studios Dropout and [Studio 400A](https://www.linkedin.com/company-beta/2599944/).",
-		"headline": "bientôt disponible",
-		"_headline": "l'animateur",
-		"subheadline": "work in progress",
-		"body": "animator.body"
+		"0": "J'ai reçu un BFA en Visual Effects de l'université ['Academy of Art University' en San&nbsp;Francisco](https://www.academyart.edu/), avec animation comme matière principale. La composition et peintures de cache ont toujours été parmi mes loisirs, et, comme ça, je pouvais mettre mon savoir en utilisation comme Compositor pour les studio de poste nommés Dropout et [Studio 400A](https://www.linkedin.com/company-beta/2599944/).",
+		"1": "Dès lors, j'ai focalisé m'attention plutôt sur l'animation web – lisez plus [ici](/hats/mathHat).",
+		"headline": "l'animateur",
+		"subheadline": "On va le réparer en production poste!"
 	},
 	"copywriter": {
 		"headline": "bientôt disponible",
