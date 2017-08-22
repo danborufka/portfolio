@@ -27,7 +27,7 @@ const _languages = {
 	'es-ES':'Español (Espania)'
 };
 
-const _pages = ['designer', 'linguist', 'mathHat','partyHat', 'designer'];
+const _pages = ['designer', 'linguist', 'mathHat','animator','partyHat','designer'];
 
 // app-wide data store (accessed from templates)
 let data = {
