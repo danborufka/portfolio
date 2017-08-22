@@ -25,9 +25,6 @@ jQuery(function($){
 	    	_resizeLastTime = + new Date();
 	    	_resizeLastWidth = $win.width();
 
-	    	console.log('_oldWidth', _oldWidth);
-	    	console.log('_resizeLastWidth', _resizeLastWidth);
-
 	    	if(_oldWidth != _resizeLastWidth)
 		    	if(_oldDelta < 1000)
 		    		if(_resizeLastDelta < 1000) {
@@ -110,8 +107,8 @@ jQuery(function($){
 		.on('mousemove', function(event){
 			clearTimeout(_afterBeforeTimeout);
 			var _afterBeforeX = event.offsetX;
-			$this.data('_afterBeforeX', _afterBeforeX);
-			$(this).find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
+			$(this).data('_afterBeforeX', _afterBeforeX)
+				.find('img:first').css('clip', 'rect(0,' + _afterBeforeX + 'px,500px,0)');
 		})
 		.on('mouseenter', function(event) {
 			clearTimeout(_afterBeforeTimeout);
