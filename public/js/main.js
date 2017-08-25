@@ -74,6 +74,9 @@ jQuery(function($){
 	  }
 
 	$(document)
+		.on('click', '.disabled', function(event) {
+			event.preventDefault();
+		})
 		.on('click', '.select.languages li', function(event) {
 			var $this 		= $(this);
 				language 	= $this.data('value');

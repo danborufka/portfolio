@@ -252,7 +252,9 @@ img 					{
 
 .sm 					{ 	font-size: 			50%; 		}
 .disabled 				{	opacity: 			.5;			
+	* {
 							pointer-events: 	none;
+	}
 }
 .cancel 				{	opacity: 			.7;			}
 
