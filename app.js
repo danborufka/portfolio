@@ -21,13 +21,14 @@ const _letters = {
 	c: 'copywriter'
 };
 const _languages = {
-	'en-US':'English (United States)', 
 	'de-DE':'Deutsch (Deutschland)', 
+	'en-GB':'English (Great Britain)', 
+	'en-US':'English (United States)', 
 	'fr-FR':'Français (Françe)',
 	'es-ES':'Español (Espania)'
 };
 
-const _pages = ['designer', 'linguist', 'mathHat','animator','partyHat','designer'];
+const _pages = ['designer','linguist','mathHat','animator','copywriter','partyHat','designer'];
 
 // app-wide data store (accessed from templates)
 let data = {
