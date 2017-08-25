@@ -91,7 +91,7 @@ function _createMarked(req) {
 	return (...arguments) => marked(req.__.apply(req, arguments));
 }
 
-function switchLang(req, res, language) {
+function switchLanguage(req, res, language) {
 	if(language) {
 		res.cookie('polygoat-portfolio-language', language);
 		data.language = language;
@@ -104,7 +104,8 @@ function switchLang(req, res, language) {
 // router middleware to read language from cookie
 app.use(function switchLanguageMW(req, res, next) {
 	var language = _.get(req.cookies, 'polygoat-portfolio-language');
-	switchLang(req, res, language);
+
+	switchLanguage(req, res, language);
 
 	data.__translations = {};	// reset translations counters
   	next();
@@ -125,36 +126,43 @@ app.get('/', (req, res) => {
 });
 
 // route for reactive translation retrieval
-app.post('/translate', (req, res) => {
+app.all('/translate', (req, res) => {
 	const keys 					= _.get(req.body, 'keys', 		  []);
-	const language 				= _.get(req.body, 'language' 		);
+	const language 				= _.get(req.body, 'language', 		_.get(req.query, 'language'));
 	const transformers 			= _.get(req.body, 'transformers', []);
 	const _ALLOWED_TRANSFORMERS = ['_', 'marked','destination'];
 	let response_json 			= { destinations: [] };
 
-	switchLang(req, res, language);
+	switchLanguage(req, res, language);
 
-	response_json.values = _.map(	keys, 
-									(key, i) => {
-										const value = data.__({phrase: key, locale: language});
+	res.redirect('/');
 
-										if(transformers[i]) {
-											const parts = transformers[i].split('.');
+	if(req.method === 'GET') {
 
-											if(_ALLOWED_TRANSFORMERS.indexOf(parts[0]) > -1) {
+	} else {
+		response_json.values = _.map(	keys, 
+										(key, i) => {
+											const value = data.__({phrase: key, locale: language});
 
-												if(parts[0] === 'destination') {
-													response_json.destinations[i] = parts.slice(1).join('.');
-													return value;
+											if(transformers[i]) {
+												const parts = transformers[i].split('.');
+
+												if(_ALLOWED_TRANSFORMERS.indexOf(parts[0]) > -1) {
+
+													if(parts[0] === 'destination') {
+														response_json.destinations[i] = parts.slice(1).join('.');
+														return value;
+													}
+													return eval(transformers[i])(value);
 												}
-												return eval(transformers[i])(value);
+												return value;
 											}
 											return value;
 										}
-										return value;
-									}
-								);
-	res.json(response_json);
+									);
+		res.json(response_json);
+	}
+
 });
 
 app.post('/contact', (req, res) => {
