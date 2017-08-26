@@ -25,6 +25,7 @@
     "lightbox2": "^2.9.0",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
+    "mobile-detect": "^1.3.6",
     "nodemailer": "^4.0.1"
   }
 }

@@ -7,6 +7,7 @@ const nodemailer		= require('nodemailer');
 const bodyParser 		= require('body-parser');
 const compression 		= require('compression');
 const cookieParser 		= require('cookie-parser');
+const MobileDetect 		= require('mobile-detect');
 const template_engines 	= require('consolidate');
 
 const app 				= express();
@@ -100,6 +101,13 @@ function switchLanguage(req, res, language) {
 		res.setLocale(language);
 	}
 }
+
+// router middleware to check if device is mobile
+app.use(function isMobileMW(req, res, next) {
+	var mD = new MobileDetect(req.headers['user-agent']);
+	data.isMobile = mD.mobile();
+	next();
+});
 
 // router middleware to read language from cookie
 app.use(function switchLanguageMW(req, res, next) {
