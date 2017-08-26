@@ -1,4 +1,6 @@
 
+	var isMobile = $('.checker.hidden-xs').is(':hidden');
+
 	Danimator.import('img/marketing-sausage.svg', 
 	{
 		expandShapes: true,
@@ -85,8 +87,7 @@
 
 			// global canvas resize handler
 			$(window).on('resize', function(event) {
-				var isMobile = $('.checker.hidden-xs').is(':hidden');
-				
+				isMobile = $('.checker.hidden-xs').is(':hidden');
 				if(!isMobile) {
 					var docWidth = $doc.width() - 20;
 					var factor = docWidth / paper.view.viewSize.width;
@@ -99,33 +100,41 @@
 
 			}).trigger('resize');
 
-			// bend on mousemove
-			scene.on('mousemove', function(event) {
-				var hitTest = moPath.hitTest(event.point, { tolerance: TOLERANCE, fill: false, stroke: true });
+			if(isMobile) {
+				$doc.on('scroll touchmove', '#marketing_scroll', function(event) {
+					_bend( (0.15 + parseInt($(this).scrollLeft()) / 1452.77) * moPath_length );
+				});
+				setTimeout(function(){_bend( 0.10 * moPath_length );}, 600);
+			} else {
+				// bend on mousemove
+				scene.on('mousemove', function(event) {
+					var hitTest = moPath.hitTest(event.point, { tolerance: TOLERANCE, fill: false, stroke: true });
 
-				if(hitTest) {
-					_bend(hitTest.location.offset);
-/* 
-					for debugging:
+					if(hitTest) {
+						_bend(hitTest.location.offset);
+	/* 
+						for debugging:
 
-					_viz && _viz.remove();
-					moPath.fullySelected = false;
-					hitTest.location.segment.selected = true;
+						_viz && _viz.remove();
+						moPath.fullySelected = false;
+						hitTest.location.segment.selected = true;
 
-					var _c = new Path.Circle(hitTest.point, TOLERANCE);
-					_c.strokeColor = 'black';
+						var _c = new Path.Circle(hitTest.point, TOLERANCE);
+						_c.strokeColor = 'black';
 
-					var _a = new Path.Circle(moPath.getPointAt(Math.max(hitTest.location.offset - sausage_length/2, 0)), 10);
-					_a.fillColor = 'crimson';
+						var _a = new Path.Circle(moPath.getPointAt(Math.max(hitTest.location.offset - sausage_length/2, 0)), 10);
+						_a.fillColor = 'crimson';
 
-					var _b = new Path.Circle(moPath.getPointAt(Math.min(hitTest.location.offset + sausage_length/2), moPath_length), 10);
-					_b.fillColor = 'limegreen';
+						var _b = new Path.Circle(moPath.getPointAt(Math.min(hitTest.location.offset + sausage_length/2), moPath_length), 10);
+						_b.fillColor = 'limegreen';
 
-					_viz = new Group([_a, _b, _c]);
-					scene.addChild(_viz);
-*/
-				}
-			});
+						_viz = new Group([_a, _b, _c]);
+						scene.addChild(_viz);
+	*/
+					}
+				});
+			}
+
 			_bend(1009);	// preposition at "r"
 		}
 	});
