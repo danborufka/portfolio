@@ -16,6 +16,8 @@
 		<%= page.title || 'Dan Borufka, Polygoat' %>
 	</title>
 	<base href="<%= base %>/" />
+<% _.each(languages, (label, code) => { %>
+	<link rel="alternate" hreflang="<%= code.toLowerCase() %>" href="/translate?language=<%= code %>"><% }); %>
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -31,9 +33,11 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/manifest.json">
+
 	<meta name="msapplication-TileColor" content="#ffd89b">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffd89b">
+	<meta property="og:image" content="http://polygoat.org/img/dan-face.png" />
 
 <%	if(isLocal) { %>
 	<link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css">

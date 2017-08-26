@@ -74,3 +74,11 @@ p                       {
 							height: 			227px!important;	
 							
 }
+
+#sausage 				{
+							background:  		transparent url('../img/marketing-pipeline.jpg') no-repeat 14% center;
+							background-size: 	80%;
+	&.ready {
+							transition: 		$transition-time ease all;
+	}
+}

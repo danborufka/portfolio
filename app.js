@@ -135,10 +135,8 @@ app.all('/translate', (req, res) => {
 
 	switchLanguage(req, res, language);
 
-	res.redirect('/');
-
 	if(req.method === 'GET') {
-
+		res.redirect('/');
 	} else {
 		response_json.values = _.map(	keys, 
 										(key, i) => {

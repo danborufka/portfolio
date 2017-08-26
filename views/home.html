@@ -1,3 +1,4 @@
+		<div class="checker hidden-xs"></div>
 		<div class="row flex-container vertical">
 			<div class="vspacer">
 				<a href="#languages" id="languageSwitch" data-toggle="modal" data-target="#languageModal" title="Switch language"><%= getLanguage() %></a>
@@ -17,7 +18,8 @@
 			</div>
 			<div class="paper pipeline">
 				<div class="img-scroll-container" id="marketing_scroll">
-					<img src="img/marketing-pipeline.jpg" width="100%" style="min-width: 600px; max-width:1245px;">
+					<canvas id="sausage" width="1452.77" height="267.25" min-width="800"></canvas>
+					<!-- <img src="img/marketing-pipeline.jpg" width="100%" style="min-width: 600px; max-width:1245px;"> -->
 				</div>
 				<p class="translatable" data-translation-key="home.jobs"><%= __('home.jobs') %></p>
 			</div>
@@ -73,3 +75,4 @@
 			</div>
 		</div>
 		<script type="text/paperscript" src="js/home.min.js" canvas="goat"></script>
+		<script type="text/paperscript" src="js/sausage.js" canvas="sausage"></script>
