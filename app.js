@@ -122,7 +122,7 @@ app.use(function switchLanguageMW(req, res, next) {
 // home route
 app.get('/', (req, res) => {
 	data.page.uri = 'home.html';
-	data.page.styles = ['css/home.css'];
+	data.page.styles = ['css/home.min.css'];
 	data.page.scripts = ['js/libs/Danimator.min.js'];
 
 	data.isLocal = req.headers.host === 'localhost:3000';
@@ -205,7 +205,7 @@ app.post('/contact', (req, res) => {
 
 	    _.extend(data.page, {
 			uri: 		'text-page.html',
-			styles: 	['css/pages.css'],
+			styles: 	['css/pages.min.css'],
 			headline: 	 data.__('contact.thanks'),
 			subheadline: data.__('contact.sent'),
 			title: 		data.__('contact.thanks'),
@@ -225,7 +225,7 @@ app.get('/hats/:hat', (req, res) => {
 	_.extend(data.page, {
 		uri: 		'hat.html',
 		scripts: 	[],
-		styles: 	['css/pages.css'],
+		styles: 	['css/pages.min.css'],
 		title: 		`Dan Borufka, ${title}`
 	});
 

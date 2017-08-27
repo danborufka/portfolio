@@ -1,0 +1,78 @@
+.poster-container a {
+  display: inline-block;
+  cursor: pointer;
+  transition: .4s all ease;
+  transition-delay: .4s; }
+  .poster-container a img {
+    max-width: 100%; }
+.poster-container.hover a {
+  opacity: .4; }
+  .poster-container.hover a:before {
+    background: url("/img/overlay-zoom-in.png") no-repeat center center;
+    content: ' ';
+    cursor: zoom-in;
+    display: block;
+    height: 76px;
+    left: 50%;
+    margin-left: -38px;
+    margin-top: -38px;
+    opacity: 0;
+    position: absolute;
+    transform: scale(2);
+    transition: 4s all;
+    top: 50%;
+    width: 76px; }
+  .poster-container.hover a:hover {
+    opacity: 1; }
+    .poster-container.hover a:hover:before {
+      transform: scale(1);
+      opacity: .8; }
+
+@media (min-width: 640px) {
+  .poster-container {
+    position: relative;
+    padding-top: 120px;
+    height: 860px; }
+
+  .floating {
+    position: absolute; }
+
+  #poster_allianz {
+    left: -80px;
+    top: -10px;
+    position: relative; }
+
+  #poster_spices {
+    left: 50%;
+    top: 0; }
+
+  #poster_svoboda {
+    right: -10px;
+    top: 70px; }
+
+  #poster_oil1 {
+    left: 0;
+    top: 200px; }
+
+  #poster_oil2 {
+    left: 80px;
+    top: 570px; }
+
+  #poster_disturbia {
+    left: 200px;
+    top: 380px; }
+
+  #poster_kenya {
+    left: 50%;
+    margin-left: -100px;
+    top: 500px; }
+
+  #poster_dan {
+    right: 30px;
+    top: 250px; }
+
+  #poster_mill {
+    right: 260px;
+    top: 320px; } }
+
+/*# sourceMappingURL=designer.css.map */

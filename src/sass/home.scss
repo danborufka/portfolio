@@ -1,0 +1,85 @@
+@import 'vars';
+
+p                       {
+							text-align: 		center;
+}
+
+.spacer 				{
+							
+}
+
+.logo 					{
+							display: 			block;
+							margin: 			0 auto;
+							max-width: 			200px;
+							transform: 			translateX(5px);	// account for goat's off-center ear
+	h1 					{
+							font-size: 			44px;
+							padding-left: 		24px;
+	}
+	h2 					{
+							font-size: 			44px;
+							margin-top: 		-60px;
+							padding-left: 		6px;
+	}
+
+	canvas,
+	img 				{
+							transition: 		.2s ease all;
+	}
+
+	&:hover 			{
+		canvas,
+		img 			{
+							transform: 			scale(1.04);
+		}
+	}
+}
+
+#hats 					{
+							font-family: 		'Nickainley-Normal';
+							font-size:  		76%;
+							max-width: 			660px;
+							text-align: 		center;
+	> a 				{
+							backface-visibility: hidden;
+							background-repeat: 	no-repeat;
+							background-position: 	center center;
+							background-size: 	contain;
+							border: 			1px solid transparent;
+							cursor: 			pointer;
+							margin-bottom: 	 	50px;
+							min-height: 		100px;
+							padding-top: 		100px;	
+							text-decoration: 	none;
+							transition: 		.2s ease all;
+		&:hover 		{
+							transform: 			scale(1.1);
+		}
+		&.disabled 		{
+							cursor: 			help;
+			&:hover 	{
+							transform: 			none;
+			}				
+		}
+	}
+}
+
+#languageSwitch 		{
+						    margin-right: 		-80px;
+					    	margin-top: 		-50px;
+}
+
+#goat.ready 			{	width: 				200px!important;	
+							height: 			227px!important;	
+							
+}
+
+#sausage 				{
+							background:  		transparent url('../img/marketing-pipeline.jpg') no-repeat 14% center;
+							background-size: 	80%;
+							transition: 		$transition-time ease all;
+	&.ready {
+							background: 		none;
+	}
+}
