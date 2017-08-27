@@ -9,8 +9,6 @@
 			var $doc 			= $(document);
 			var _viz;
 
-			var _lastOffset 	= 0;
-
 			var elSelf 			= this;
 			var scene 			= elSelf.item;
 
@@ -102,8 +100,6 @@
 
 			}).trigger('resize');
 
-			//console.log('we mob?', isMobile, scene, _bend);
-
 			if(isMobile) {
 				$doc.on('scroll touchmove', '#marketing_scroll', function(event) {
 					_bend( (0.15 + parseInt($(this).scrollLeft()) / 1452.77) * moPath_length );
@@ -115,10 +111,7 @@
 					var hitTest = moPath.hitTest(event.point, { tolerance: TOLERANCE, fill: false, stroke: true });
 
 					if(hitTest) {
-						//console.log('_lastOffset', _lastOffset, hitTest.location.offset);
-
 						_bend(hitTest.location.offset);
-						_lastOffset = hitTest.location.offset;
 	/* 
 						for debugging:
 
