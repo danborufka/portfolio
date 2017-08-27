@@ -102,7 +102,7 @@
 
 			}).trigger('resize');
 
-			console.log('we mob?', isMobile, scene, _bend);
+			//console.log('we mob?', isMobile, scene, _bend);
 
 			if(isMobile) {
 				$doc.on('scroll touchmove', '#marketing_scroll', function(event) {
@@ -115,7 +115,7 @@
 					var hitTest = moPath.hitTest(event.point, { tolerance: TOLERANCE, fill: false, stroke: true });
 
 					if(hitTest) {
-						console.log('_lastOffset', _lastOffset, hitTest.location.offset);
+						//console.log('_lastOffset', _lastOffset, hitTest.location.offset);
 
 						_bend(hitTest.location.offset);
 						_lastOffset = hitTest.location.offset;

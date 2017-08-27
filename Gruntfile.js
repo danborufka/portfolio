@@ -20,9 +20,24 @@ module.exports = function(grunt) {
             src: 'src/css/*.css',
             dest:'public/css/'
         }
+    },
+    uglify: {
+        main: {
+            expand: true,
+            flatten: true,
+            ext: '.min.js',
+            src: 'src/js/*.js',
+            dest:'public/js/'
+        }
+    },
+    watch: {
+      main: {
+        files: ['src/*/*.*'],
+        tasks: ['sass', 'cssmin', 'uglify']
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
-  grunt.registerTask('default', ['sass', 'cssmin'/*, 'uglify', 'watch'*/]);
+  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'watch']);
 };
