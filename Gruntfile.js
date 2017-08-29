@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+  var tasks = ['sass', 'cssmin', 'uglify', 'compress'];
+
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
@@ -30,14 +32,25 @@ module.exports = function(grunt) {
             dest:'public/js/'
         }
     },
+    compress: {
+        main: {
+            options:    { mode: 'gzip'},
+            expand:     true,
+            cwd:        'public/',
+            rename:     (dest, src) => `public/${src}.gz`,
+            src:        ['**/*.js', '**/*.png', '**/*.jpg']
+        }
+    },
     watch: {
       main: {
         files: ['src/*/*.*'],
-        tasks: ['sass', 'cssmin', 'uglify']
+        tasks
       }
     }
   });
 
+  tasks.push('watch');
+
   require('load-grunt-tasks')(grunt);
-  grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'watch']);
+  grunt.registerTask('default', tasks);
 };

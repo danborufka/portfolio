@@ -1,6 +1,7 @@
 const _ 				= require('lodash');
 const fs 				= require("fs");
 const i18n 				= require('i18n');
+const path 				= require('path');
 const marked 			= _.partialRight(require('marked').inlineLexer, []);
 const express 			= require('express');
 const nodemailer		= require('nodemailer');
@@ -12,6 +13,7 @@ const template_engines 	= require('consolidate');
 
 const app 				= express();
 
+// shortcut letters for single-letter routes
 const _letters = {
 	d: 'designer', 
 	l: 'linguist', 
@@ -29,6 +31,7 @@ const _languages = {
 	'es-ES':'Español (Espania)'
 };
 
+// pages for cycling of "hats"
 const _pages = ['designer','linguist','mathHat','animator','copywriter','partyHat','designer'];
 
 // app-wide data store (accessed from templates)
@@ -42,9 +45,10 @@ let data = {
 	language: 	 'en-US',
 	languages: 	 _languages,
 
-	include: 	 file => _.template(fs.readFileSync(app.get('views') + '/' + file, 'utf8'))(data),
+	include: 	 file => _.template(fs.readFileSync(app.get('views') + '/' + file, 'utf8'))(data), 	// template helper
 	getLanguage: () => data.language.split('-').join(' (').toUpperCase() + ')',
 
+	// helpers to retrieve current and next translation string
 	__current(translation) {
 		return translation + '.' + _.get(data.__translations, translation, 0);
 	},
@@ -64,6 +68,7 @@ let data = {
 				 }
 };
 
+// clone of lodash's startCase function, but with support for foreign letters
 _.utf8startCase = str => _.map((str).split(" "), _.upperFirst).join(" ");
 
 // config translation engine
@@ -80,18 +85,38 @@ app.engine('html', template_engines.lodash);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
+// middleware for gzip-compressed files
+app.use((req, res, next) => {
+	var extension = path.parse(req.url).ext.slice(1);
+
+	switch(extension) {
+		case 'js':
+		case 'png':
+		case 'jpg':
+			var hasGzip = fs.existsSync(`public${req.url}.gz`);
+			if(hasGzip) {
+				req.url += '.gz';
+				res.set('Content-Encoding', 'gzip');
+			}
+			break;
+	}
+	next();
+});
+
 // serve static client-side files (css/js/img/…)
-app.use(express.static( __dirname + '/public' ));
+app.use(express.static( __dirname + '/public', { maxage: '2d' } ));
 app.use(i18n.init);
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(compression());
+app.use(compression({filter: () => true}));
 
+// wrapper factory for markdown parsing
 function _createMarked(req) {
 	return (...arguments) => marked(req.__.apply(req, arguments));
 }
 
+// global helper to switch languages and save current setting to cookie
 function switchLanguage(req, res, language) {
 	if(language) {
 		res.cookie('polygoat-portfolio-language', language);
