@@ -35,11 +35,6 @@
 
 			// get all bendable's segments and store offset from sausage's center
 			if(elSausage.bendables) {
-				elSpine.data._bendableSegments = [];
-				_.each(spine.segments, function(segment, i) {
-					elSpine.data._bendableSegments[i] = segment.point - sausage.position;
-				});
-
 				_.each(elSausage.bendables, function(elBendable) {
 					elBendable.data._bendableSegments = [];
 					_.each(elBendable.item.segments, function(segment, i) {
